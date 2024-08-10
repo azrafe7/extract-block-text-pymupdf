@@ -1,1668 +1,2244 @@
 [
   {
-    "pageNumber": "1",
-    "pageWidth": "595.2760009765625",
-    "pageHight": "841.8900146484375",
-    "textsModelsList": [
+    "page_number": 1,
+    "page_width": 595.2760009765625,
+    "page_height": 841.8900146484375,
+    "texts_models_list": [
       {
-        "parentBlockNumber": "2",
-        "textBoxName": "FACTORS INFLUENCING INDIA INNOVATION STORY",
-        "textXPos": "40.40629959106445",
-        "textYPos": "724.0301513671875",
-        "textBoundingBox": "40.40629959106445,724.0301513671875,250.39016723632812,733.1981201171875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 2,
+        "original_text": "FACTORS INFLUENCING INDIA INNOVATION STORY",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 40.40629959106445,
+        "top": 724.0301513671875,
+        "end_left": 250.39016723632812,
+        "end_top": 733.1981201171875
       },
       {
-        "parentBlockNumber": "3",
-        "textBoxName": "India\u2019s position in the Global Innovation Index* has improved to 40",
-        "textXPos": "32.84629821777344",
-        "textYPos": "794.7581176757812",
-        "textBoundingBox": "32.84629821777344,794.7581176757812,271.3512878417969,803.9260864257812",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 3,
+        "original_text": "India\u2019s position in the Global Innovation Index* has improved to 40",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 32.84629821777344,
+        "top": 794.7572631835938,
+        "end_left": 565.0574951171875,
+        "end_top": 803.9260864257812
       },
       {
-        "parentBlockNumber": "3",
-        "textBoxName": "th",
-        "textXPos": "271.49609375",
-        "textYPos": "795.1885375976562",
-        "textBoundingBox": "271.49609375,795.1885375976562,275.45654296875,800.533447265625",
-        "fontSize": 4.664000034332275,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 3,
+        "original_text": "th",
+        "font_size": 4.664000034332275,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "superscript sans proportional",
+        "left": 32.84629821777344,
+        "top": 794.7572631835938,
+        "end_left": 565.0574951171875,
+        "end_top": 803.9260864257812
       },
       {
-        "parentBlockNumber": "3",
-        "textBoxName": " rank in 2023 from 81",
-        "textXPos": "275.525390625",
-        "textYPos": "794.7572631835938",
-        "textBoundingBox": "275.525390625,794.7572631835938,351.6384582519531,803.9252319335938",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 3,
+        "original_text": " rank in 2023 from 81",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 32.84629821777344,
+        "top": 794.7572631835938,
+        "end_left": 565.0574951171875,
+        "end_top": 803.9260864257812
       },
       {
-        "parentBlockNumber": "3",
-        "textBoxName": "st",
-        "textXPos": "351.7637023925781",
-        "textYPos": "795.1885375976562",
-        "textBoundingBox": "351.7637023925781,795.1885375976562,355.4614562988281,800.533447265625",
-        "fontSize": 4.664000034332275,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 3,
+        "original_text": "st",
+        "font_size": 4.664000034332275,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "superscript sans proportional",
+        "left": 32.84629821777344,
+        "top": 794.7572631835938,
+        "end_left": 565.0574951171875,
+        "end_top": 803.9260864257812
       },
       {
-        "parentBlockNumber": "3",
-        "textBoxName": " in 2015. Due to the above favorable tailwinds, we believe ",
-        "textXPos": "355.53118896484375",
-        "textYPos": "794.7572631835938",
-        "textBoundingBox": "355.53118896484375,794.7572631835938,565.0574951171875,803.9252319335938",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 3,
+        "original_text": " in 2015. Due to the above favorable tailwinds, we believe ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 32.84629821777344,
+        "top": 794.7572631835938,
+        "end_left": 565.0574951171875,
+        "end_top": 803.9260864257812
       },
       {
-        "parentBlockNumber": "3",
-        "textBoxName": "India is currently at the cusp of an innovation cycle.",
-        "textXPos": "32.84320068359375",
-        "textYPos": "804.3572387695312",
-        "textBoundingBox": "32.84320068359375,804.3572387695312,220.177734375,813.5252075195312",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 3,
+        "original_text": "India is currently at the cusp of an innovation cycle.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 32.84320068359375,
+        "top": 804.3572387695312,
+        "end_left": 220.177734375,
+        "end_top": 813.5252075195312
       },
       {
-        "parentBlockNumber": "4",
-        "textBoxName": "Booming Startup Ecosystem",
-        "textXPos": "58.667198181152344",
-        "textYPos": "750.3252563476562",
-        "textBoundingBox": "58.667198181152344,750.3252563476562,164.395263671875,759.4932250976562",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 4,
+        "original_text": "Booming Startup Ecosystem",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 58.667198181152344,
+        "top": 750.3252563476562,
+        "end_left": 164.395263671875,
+        "end_top": 759.4932250976562
       },
       {
-        "parentBlockNumber": "4",
-        "textBoxName": "Inherent Talent Pool",
-        "textXPos": "58.667198181152344",
-        "textYPos": "762.3252563476562",
-        "textBoundingBox": "58.667198181152344,762.3252563476562,134.50856018066406,771.4932250976562",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 4,
+        "original_text": "Inherent Talent Pool",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 58.667198181152344,
+        "top": 762.3252563476562,
+        "end_left": 134.50856018066406,
+        "end_top": 771.4932250976562
       },
       {
-        "parentBlockNumber": "4",
-        "textBoxName": "Government Initiatives",
-        "textXPos": "58.667198181152344",
-        "textYPos": "774.3252563476562",
-        "textBoundingBox": "58.667198181152344,774.3252563476562,142.4512176513672,783.4932250976562",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 4,
+        "original_text": "Government Initiatives",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 58.667198181152344,
+        "top": 774.3252563476562,
+        "end_left": 142.4512176513672,
+        "end_top": 783.4932250976562
       },
       {
-        "parentBlockNumber": "5",
-        "textBoxName": "Growing Consumer Market",
-        "textXPos": "212.89120483398438",
-        "textYPos": "750.3252563476562",
-        "textBoundingBox": "212.89120483398438,750.3252563476562,312.865966796875,759.4932250976562",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 5,
+        "original_text": "Growing Consumer Market",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 212.89120483398438,
+        "top": 750.3252563476562,
+        "end_left": 312.865966796875,
+        "end_top": 759.4932250976562
       },
       {
-        "parentBlockNumber": "5",
-        "textBoxName": "Strong Digital Infrastructure",
-        "textXPos": "212.89120483398438",
-        "textYPos": "762.3252563476562",
-        "textBoundingBox": "212.89120483398438,762.3252563476562,315.8605651855469,771.4932250976562",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 5,
+        "original_text": "Strong Digital Infrastructure",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 212.89120483398438,
+        "top": 762.3252563476562,
+        "end_left": 315.8605651855469,
+        "end_top": 771.4932250976562
       },
       {
-        "parentBlockNumber": "5",
-        "textBoxName": "Strong Funding Ecosystem",
-        "textXPos": "212.89120483398438",
-        "textYPos": "774.3252563476562",
-        "textBoundingBox": "212.89120483398438,774.3252563476562,313.5313720703125,783.4932250976562",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 5,
+        "original_text": "Strong Funding Ecosystem",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 212.89120483398438,
+        "top": 774.3252563476562,
+        "end_left": 313.5313720703125,
+        "end_top": 783.4932250976562
       },
       {
-        "parentBlockNumber": "6",
-        "textBoxName": "Source: SBIMF Research. * Published by the World Intellectual Property Organization",
-        "textXPos": "33.277801513671875",
-        "textYPos": "821.5745849609375",
-        "textBoundingBox": "33.277801513671875,821.5745849609375,312.9569091796875,829.5965576171875",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 6,
+        "original_text": "Source: SBIMF Research. * Published by the World Intellectual Property Organization",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 33.277801513671875,
+        "top": 821.5745849609375,
+        "end_left": 312.9569091796875,
+        "end_top": 829.5965576171875
       },
       {
-        "parentBlockNumber": "7",
-        "textBoxName": "INNOVATION - A KEY DISRUPTOR ACROSS SECTORS",
-        "textXPos": "40.07469940185547",
-        "textYPos": "442.6566467285156",
-        "textBoundingBox": "40.07469940185547,442.6566467285156,256.9385986328125,451.8246154785156",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 7,
+        "original_text": "INNOVATION - A KEY DISRUPTOR ACROSS SECTORS",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 40.07469940185547,
+        "top": 442.6566467285156,
+        "end_left": 256.9385986328125,
+        "end_top": 451.8246154785156
       },
       {
-        "parentBlockNumber": "32",
-        "textBoxName": "Automobiles",
-        "textXPos": "48.313499450683594",
-        "textYPos": "501.9705505371094",
-        "textBoundingBox": "48.313499450683594,501.9705505371094,98.7627182006836,511.1385192871094",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 32,
+        "original_text": "Automobiles",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 4543594,
+        "font_color_hex": "#45546A",
+        "font_style": "sans proportional bold",
+        "left": 48.313499450683594,
+        "top": 501.9705505371094,
+        "end_left": 98.7627182006836,
+        "end_top": 511.1385192871094
       },
       {
-        "parentBlockNumber": "33",
-        "textBoxName": "Electric Vehicles",
-        "textXPos": "42.59349822998047",
-        "textYPos": "517.3385620117188",
-        "textBoundingBox": "42.59349822998047,517.3385620117188,104.47350311279297,526.5065307617188",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 33,
+        "original_text": "Electric Vehicles",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 42.59349822998047,
+        "top": 517.3385620117188,
+        "end_left": 104.47350311279297,
+        "end_top": 526.5065307617188
       },
       {
-        "parentBlockNumber": "33",
-        "textBoxName": "Self Drive cars",
-        "textXPos": "46.12949752807617",
-        "textYPos": "528.3385620117188",
-        "textBoundingBox": "46.12949752807617,528.3385620117188,100.93749237060547,537.5065307617188",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 33,
+        "original_text": "Self Drive cars",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 46.12949752807617,
+        "top": 528.3385620117188,
+        "end_left": 100.93749237060547,
+        "end_top": 537.5065307617188
       },
       {
-        "parentBlockNumber": "33",
-        "textBoxName": "Hybrid vehicles",
-        "textXPos": "45.01749801635742",
-        "textYPos": "539.3385620117188",
-        "textBoundingBox": "45.01749801635742,539.3385620117188,102.04949951171875,548.5065307617188",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 33,
+        "original_text": "Hybrid vehicles",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 45.01749801635742,
+        "top": 539.3385620117188,
+        "end_left": 102.04949951171875,
+        "end_top": 548.5065307617188
       },
       {
-        "parentBlockNumber": "34",
-        "textBoxName": "Financial Services",
-        "textXPos": "101.41749572753906",
-        "textYPos": "651.49853515625",
-        "textBoundingBox": "101.41749572753906,651.49853515625,174.63465881347656,660.66650390625",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 34,
+        "original_text": "Financial Services",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 15684649,
+        "font_color_hex": "#EF5429",
+        "font_style": "sans proportional bold",
+        "left": 101.41749572753906,
+        "top": 651.49853515625,
+        "end_left": 174.63465881347656,
+        "end_top": 660.66650390625
       },
       {
-        "parentBlockNumber": "35",
-        "textBoxName": "UPI",
-        "textXPos": "131.7534942626953",
-        "textYPos": "666.8745727539062",
-        "textBoundingBox": "131.7534942626953,666.8745727539062,145.48814392089844,676.0425415039062",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 35,
+        "original_text": "UPI",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 131.7534942626953,
+        "top": 666.8745727539062,
+        "end_left": 145.48814392089844,
+        "end_top": 676.0425415039062
       },
       {
-        "parentBlockNumber": "35",
-        "textBoxName": "Block chain",
-        "textXPos": "117.16949462890625",
-        "textYPos": "677.8745727539062",
-        "textBoundingBox": "117.16949462890625,677.8745727539062,160.07469177246094,687.0425415039062",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 35,
+        "original_text": "Block chain",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 117.16949462890625,
+        "top": 677.8745727539062,
+        "end_left": 160.07469177246094,
+        "end_top": 687.0425415039062
       },
       {
-        "parentBlockNumber": "35",
-        "textBoxName": "Payment Aggregator",
-        "textXPos": "100.23348999023438",
-        "textYPos": "688.8745727539062",
-        "textBoundingBox": "100.23348999023438,688.8745727539062,177.0015106201172,698.0425415039062",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 35,
+        "original_text": "Payment Aggregator",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 100.23348999023438,
+        "top": 688.8745727539062,
+        "end_left": 177.0015106201172,
+        "end_top": 698.0425415039062
       },
       {
-        "parentBlockNumber": "36",
-        "textBoxName": "Energy",
-        "textXPos": "187.99349975585938",
-        "textYPos": "501.9705810546875",
-        "textBoundingBox": "187.99349975585938,501.9705810546875,216.1147003173828,511.1385498046875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 36,
+        "original_text": "Energy",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 4813239,
+        "font_color_hex": "#4971B7",
+        "font_style": "sans proportional bold",
+        "left": 187.99349975585938,
+        "top": 501.9705810546875,
+        "end_left": 216.1147003173828,
+        "end_top": 511.1385498046875
       },
       {
-        "parentBlockNumber": "37",
-        "textBoxName": "Hydrogen",
-        "textXPos": "184.00950622558594",
-        "textYPos": "517.3465576171875",
-        "textBoundingBox": "184.00950622558594,517.3465576171875,220.0906982421875,526.5145263671875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 37,
+        "original_text": "Hydrogen",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 184.00950622558594,
+        "top": 517.3465576171875,
+        "end_left": 220.0906982421875,
+        "end_top": 526.5145263671875
       },
       {
-        "parentBlockNumber": "37",
-        "textBoxName": "Battery Storage",
-        "textXPos": "172.85751342773438",
-        "textYPos": "528.3465576171875",
-        "textBoundingBox": "172.85751342773438,528.3465576171875,231.24267578125,537.5145263671875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 37,
+        "original_text": "Battery Storage",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 172.85751342773438,
+        "top": 528.3465576171875,
+        "end_left": 231.24267578125,
+        "end_top": 537.5145263671875
       },
       {
-        "parentBlockNumber": "37",
-        "textBoxName": "Grid integration",
-        "textXPos": "173.20150756835938",
-        "textYPos": "539.3465576171875",
-        "textBoundingBox": "173.20150756835938,539.3465576171875,230.8906707763672,548.5145263671875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 37,
+        "original_text": "Grid integration",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 173.20150756835938,
+        "top": 539.3465576171875,
+        "end_left": 230.8906707763672,
+        "end_top": 548.5145263671875
       },
       {
-        "parentBlockNumber": "38",
-        "textBoxName": "Consumption",
-        "textXPos": "241.8415069580078",
-        "textYPos": "651.506591796875",
-        "textBoundingBox": "241.8415069580078,651.506591796875,295.3923034667969,660.674560546875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 38,
+        "original_text": "Consumption",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 15235375,
+        "font_color_hex": "#E8792F",
+        "font_style": "sans proportional bold",
+        "left": 241.8415069580078,
+        "top": 651.506591796875,
+        "end_left": 295.3923034667969,
+        "end_top": 660.674560546875
       },
       {
-        "parentBlockNumber": "39",
-        "textBoxName": "Quick Commerce",
-        "textXPos": "235.1855010986328",
-        "textYPos": "666.8745727539062",
-        "textBoundingBox": "235.1855010986328,666.8745727539062,299.57080078125,676.0425415039062",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 39,
+        "original_text": "Quick Commerce",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 235.1855010986328,
+        "top": 666.8745727539062,
+        "end_left": 299.57080078125,
+        "end_top": 676.0425415039062
       },
       {
-        "parentBlockNumber": "39",
-        "textBoxName": "Augmented reality",
-        "textXPos": "233.53750610351562",
-        "textYPos": "677.8745727539062",
-        "textBoundingBox": "233.53750610351562,677.8745727539062,301.2096252441406,687.0425415039062",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 39,
+        "original_text": "Augmented reality",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 233.53750610351562,
+        "top": 677.8745727539062,
+        "end_left": 301.2096252441406,
+        "end_top": 687.0425415039062
       },
       {
-        "parentBlockNumber": "39",
-        "textBoxName": "Omnichannel integration",
-        "textXPos": "221.8175048828125",
-        "textYPos": "688.8745727539062",
-        "textBoundingBox": "221.8175048828125,688.8745727539062,312.9228515625,698.0425415039062",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 39,
+        "original_text": "Omnichannel integration",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 221.8175048828125,
+        "top": 688.8745727539062,
+        "end_left": 312.9228515625,
+        "end_top": 698.0425415039062
       },
       {
-        "parentBlockNumber": "40",
-        "textBoxName": "Media & Entertainment",
-        "textXPos": "287.7535095214844",
-        "textYPos": "501.9705810546875",
-        "textBoundingBox": "287.7535095214844,501.9705810546875,378.4338073730469,511.1385498046875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 40,
+        "original_text": "Media & Entertainment",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 8355711,
+        "font_color_hex": "#7F7F7F",
+        "font_style": "sans proportional bold",
+        "left": 287.7535095214844,
+        "top": 501.9705810546875,
+        "end_left": 378.4338073730469,
+        "end_top": 511.1385498046875
       },
       {
-        "parentBlockNumber": "41",
-        "textBoxName": "OTT",
-        "textXPos": "324.5615234375",
-        "textYPos": "517.338623046875",
-        "textBoundingBox": "324.5615234375,517.338623046875,340.96026611328125,526.506591796875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 41,
+        "original_text": "OTT",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 324.5615234375,
+        "top": 517.338623046875,
+        "end_left": 340.96026611328125,
+        "end_top": 526.506591796875
       },
       {
-        "parentBlockNumber": "41",
-        "textBoxName": "Digital Content & Ads",
-        "textXPos": "292.7375183105469",
-        "textYPos": "528.338623046875",
-        "textBoundingBox": "292.7375183105469,528.338623046875,372.7697448730469,537.506591796875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 41,
+        "original_text": "Digital Content & Ads",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 292.7375183105469,
+        "top": 528.338623046875,
+        "end_left": 372.7697448730469,
+        "end_top": 537.506591796875
       },
       {
-        "parentBlockNumber": "41",
-        "textBoxName": "Music streaming",
-        "textXPos": "302.2335205078125",
-        "textYPos": "539.338623046875",
-        "textBoundingBox": "302.2335205078125,539.338623046875,363.26690673828125,548.506591796875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 41,
+        "original_text": "Music streaming",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 302.2335205078125,
+        "top": 539.338623046875,
+        "end_left": 363.26690673828125,
+        "end_top": 548.506591796875
       },
       {
-        "parentBlockNumber": "42",
-        "textBoxName": "Technology",
-        "textXPos": "375.2735290527344",
-        "textYPos": "651.4985961914062",
-        "textBoundingBox": "375.2735290527344,651.4985961914062,421.9708557128906,660.6665649414062",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 42,
+        "original_text": "Technology",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 15249441,
+        "font_color_hex": "#E8B021",
+        "font_style": "sans proportional bold",
+        "left": 375.2735290527344,
+        "top": 651.4985961914062,
+        "end_left": 421.9708557128906,
+        "end_top": 660.6665649414062
       },
       {
-        "parentBlockNumber": "43",
-        "textBoxName": "Cloud computing",
-        "textXPos": "367.79351806640625",
-        "textYPos": "666.8746337890625",
-        "textBoundingBox": "367.79351806640625,666.8746337890625,430.618896484375,676.0426025390625",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 43,
+        "original_text": "Cloud computing",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 367.79351806640625,
+        "top": 666.8746337890625,
+        "end_left": 430.618896484375,
+        "end_top": 676.0426025390625
       },
       {
-        "parentBlockNumber": "43",
-        "textBoxName": "AI & IoT",
-        "textXPos": "384.0655212402344",
-        "textYPos": "677.8746337890625",
-        "textBoundingBox": "384.0655212402344,677.8746337890625,414.3683166503906,687.0426025390625",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 43,
+        "original_text": "AI & IoT",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 384.0655212402344,
+        "top": 677.8746337890625,
+        "end_left": 414.3683166503906,
+        "end_top": 687.0426025390625
       },
       {
-        "parentBlockNumber": "43",
-        "textBoxName": "Data centers",
-        "textXPos": "375.43353271484375",
-        "textYPos": "688.8746337890625",
-        "textBoundingBox": "375.43353271484375,688.8746337890625,422.98565673828125,698.0426025390625",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 43,
+        "original_text": "Data centers",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 375.43353271484375,
+        "top": 688.8746337890625,
+        "end_left": 422.98565673828125,
+        "end_top": 698.0426025390625
       },
       {
-        "parentBlockNumber": "44",
-        "textBoxName": "Industrials",
-        "textXPos": "440.3775329589844",
-        "textYPos": "501.9705810546875",
-        "textBoundingBox": "440.3775329589844,501.9705810546875,482.8348693847656,511.1385498046875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 44,
+        "original_text": "Industrials",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 4345956,
+        "font_color_hex": "#425064",
+        "font_style": "sans proportional bold",
+        "left": 440.3775329589844,
+        "top": 501.9705810546875,
+        "end_left": 482.8348693847656,
+        "end_top": 511.1385498046875
       },
       {
-        "parentBlockNumber": "45",
-        "textBoxName": "Robots & Drones",
-        "textXPos": "429.74554443359375",
-        "textYPos": "517.3465576171875",
-        "textBoundingBox": "429.74554443359375,517.3465576171875,493.45770263671875,526.5145263671875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 45,
+        "original_text": "Robots & Drones",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 429.74554443359375,
+        "top": 517.3465576171875,
+        "end_left": 493.45770263671875,
+        "end_top": 526.5145263671875
       },
       {
-        "parentBlockNumber": "45",
-        "textBoxName": "3D printing",
-        "textXPos": "441.2575378417969",
-        "textYPos": "528.3465576171875",
-        "textBoundingBox": "441.2575378417969,528.3465576171875,481.9388732910156,537.5145263671875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 45,
+        "original_text": "3D printing",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 441.2575378417969,
+        "top": 528.3465576171875,
+        "end_left": 481.9388732910156,
+        "end_top": 537.5145263671875
       },
       {
-        "parentBlockNumber": "45",
-        "textBoxName": "Nanotechnology",
-        "textXPos": "431.3935241699219",
-        "textYPos": "539.3465576171875",
-        "textBoundingBox": "431.3935241699219,539.3465576171875,491.8016662597656,548.5145263671875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 45,
+        "original_text": "Nanotechnology",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 431.3935241699219,
+        "top": 539.3465576171875,
+        "end_left": 491.8016662597656,
+        "end_top": 548.5145263671875
       },
       {
-        "parentBlockNumber": "46",
-        "textBoxName": "Healthcare",
-        "textXPos": "506.80950927734375",
-        "textYPos": "651.506591796875",
-        "textBoundingBox": "506.80950927734375,651.506591796875,549.5148315429688,660.674560546875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
+        "parent_block_number": 46,
+        "original_text": "Healthcare",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 4700272,
+        "font_color_hex": "#47B870",
+        "font_style": "sans proportional bold",
+        "left": 506.80950927734375,
+        "top": 651.506591796875,
+        "end_left": 549.5148315429688,
+        "end_top": 660.674560546875
       },
       {
-        "parentBlockNumber": "47",
-        "textBoxName": "Medtech",
-        "textXPos": "512.8175048828125",
-        "textYPos": "666.882568359375",
-        "textBoundingBox": "512.8175048828125,666.882568359375,544.6987915039062,676.050537109375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 47,
+        "original_text": "Medtech",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 512.8175048828125,
+        "top": 666.882568359375,
+        "end_left": 544.6987915039062,
+        "end_top": 676.050537109375
       },
       {
-        "parentBlockNumber": "47",
-        "textBoxName": "E-Pharmacy",
-        "textXPos": "505.8575134277344",
-        "textYPos": "677.882568359375",
-        "textBoundingBox": "505.8575134277344,677.882568359375,551.6655883789062,687.050537109375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 47,
+        "original_text": "E-Pharmacy",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 505.8575134277344,
+        "top": 677.882568359375,
+        "end_left": 551.6655883789062,
+        "end_top": 687.050537109375
       },
       {
-        "parentBlockNumber": "47",
-        "textBoxName": "Biotechnolgy",
-        "textXPos": "504.7615051269531",
-        "textYPos": "688.882568359375",
-        "textBoundingBox": "504.7615051269531,688.882568359375,552.7615966796875,698.050537109375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 47,
+        "original_text": "Biotechnolgy",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 504.7615051269531,
+        "top": 688.882568359375,
+        "end_left": 552.7615966796875,
+        "end_top": 698.050537109375
       },
       {
-        "parentBlockNumber": "48",
-        "textBoxName": "Innovation drives growth by introducing new ideas, technologies, and processes that challenge norms. Companies embracing innovation gain ",
-        "textXPos": "38.80950927734375",
-        "textYPos": "473.41058349609375",
-        "textBoundingBox": "38.80950927734375,473.41058349609375,558.7155151367188,482.57855224609375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 48,
+        "original_text": "Innovation drives growth by introducing new ideas, technologies, and processes that challenge norms. Companies embracing innovation gain ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 38.80950927734375,
+        "top": 473.41058349609375,
+        "end_left": 558.7155151367188,
+        "end_top": 482.57855224609375
       },
       {
-        "parentBlockNumber": "48",
-        "textBoxName": "a competitive edge, shaping the future of their sectors.",
-        "textXPos": "38.80950927734375",
-        "textYPos": "483.0105895996094",
-        "textBoundingBox": "38.80950927734375,483.0105895996094,237.95201110839844,492.1785583496094",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
+        "parent_block_number": 48,
+        "original_text": "a competitive edge, shaping the future of their sectors.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 38.80950927734375,
+        "top": 483.0105895996094,
+        "end_left": 237.95201110839844,
+        "end_top": 492.1785583496094
       }
     ],
     "blocks": [
       {
-        "number": "2",
+        "number": 2,
         "text": "FACTORS INFLUENCING INDIA INNOVATION STORY",
         "boundingBox": "40.40629959106445,724.0301513671875,250.39016723632812,733.1981201171875"
       },
       {
-        "number": "3",
+        "number": 3,
         "text": "India\u2019s position in the Global Innovation Index* has improved to 40th rank in 2023 from 81st in 2015. Due to the above favorable tailwinds, we believe \nIndia is currently at the cusp of an innovation cycle.",
         "boundingBox": "32.84320068359375,794.7572631835938,565.0574951171875,813.5252075195312"
       },
       {
-        "number": "4",
+        "number": 4,
         "text": "Booming Startup Ecosystem\nInherent Talent Pool\nGovernment Initiatives",
         "boundingBox": "58.667198181152344,750.3252563476562,164.395263671875,783.4932250976562"
       },
       {
-        "number": "5",
+        "number": 5,
         "text": "Growing Consumer Market\nStrong Digital Infrastructure\nStrong Funding Ecosystem",
         "boundingBox": "212.89120483398438,750.3252563476562,315.8605651855469,783.4932250976562"
       },
       {
-        "number": "6",
+        "number": 6,
         "text": "Source: SBIMF Research. * Published by the World Intellectual Property Organization",
         "boundingBox": "33.277801513671875,821.5745849609375,312.9569091796875,829.5965576171875"
       },
       {
-        "number": "7",
+        "number": 7,
         "text": "INNOVATION - A KEY DISRUPTOR ACROSS SECTORS",
         "boundingBox": "40.07469940185547,442.6566467285156,256.9385986328125,451.8246154785156"
       },
       {
-        "number": "32",
+        "number": 32,
         "text": "Automobiles",
         "boundingBox": "48.313499450683594,501.9705505371094,98.7627182006836,511.1385192871094"
       },
       {
-        "number": "33",
+        "number": 33,
         "text": "Electric Vehicles\nSelf Drive cars\nHybrid vehicles",
         "boundingBox": "42.59349822998047,517.3385620117188,104.47350311279297,548.5065307617188"
       },
       {
-        "number": "34",
+        "number": 34,
         "text": "Financial Services",
         "boundingBox": "101.41749572753906,651.49853515625,174.63465881347656,660.66650390625"
       },
       {
-        "number": "35",
+        "number": 35,
         "text": "UPI\nBlock chain\nPayment Aggregator",
         "boundingBox": "100.23348999023438,666.8745727539062,177.0015106201172,698.0425415039062"
       },
       {
-        "number": "36",
+        "number": 36,
         "text": "Energy",
         "boundingBox": "187.99349975585938,501.9705810546875,216.1147003173828,511.1385498046875"
       },
       {
-        "number": "37",
+        "number": 37,
         "text": "Hydrogen\nBattery Storage\nGrid integration",
         "boundingBox": "172.85751342773438,517.3465576171875,231.24267578125,548.5145263671875"
       },
       {
-        "number": "38",
+        "number": 38,
         "text": "Consumption",
         "boundingBox": "241.8415069580078,651.506591796875,295.3923034667969,660.674560546875"
       },
       {
-        "number": "39",
+        "number": 39,
         "text": "Quick Commerce\nAugmented reality\nOmnichannel integration",
         "boundingBox": "221.8175048828125,666.8745727539062,312.9228515625,698.0425415039062"
       },
       {
-        "number": "40",
+        "number": 40,
         "text": "Media & Entertainment",
         "boundingBox": "287.7535095214844,501.9705810546875,378.4338073730469,511.1385498046875"
       },
       {
-        "number": "41",
+        "number": 41,
         "text": "OTT\nDigital Content & Ads\nMusic streaming",
         "boundingBox": "292.7375183105469,517.338623046875,372.7697448730469,548.506591796875"
       },
       {
-        "number": "42",
+        "number": 42,
         "text": "Technology",
         "boundingBox": "375.2735290527344,651.4985961914062,421.9708557128906,660.6665649414062"
       },
       {
-        "number": "43",
+        "number": 43,
         "text": "Cloud computing\nAI & IoT\nData centers",
         "boundingBox": "367.79351806640625,666.8746337890625,430.618896484375,698.0426025390625"
       },
       {
-        "number": "44",
+        "number": 44,
         "text": "Industrials",
         "boundingBox": "440.3775329589844,501.9705810546875,482.8348693847656,511.1385498046875"
       },
       {
-        "number": "45",
+        "number": 45,
         "text": "Robots & Drones\n3D printing\nNanotechnology",
         "boundingBox": "429.74554443359375,517.3465576171875,493.45770263671875,548.5145263671875"
       },
       {
-        "number": "46",
+        "number": 46,
         "text": "Healthcare",
         "boundingBox": "506.80950927734375,651.506591796875,549.5148315429688,660.674560546875"
       },
       {
-        "number": "47",
+        "number": 47,
         "text": "Medtech\nE-Pharmacy\nBiotechnolgy",
         "boundingBox": "504.7615051269531,666.882568359375,552.7615966796875,698.050537109375"
       },
       {
-        "number": "48",
+        "number": 48,
         "text": "Innovation drives growth by introducing new ideas, technologies, and processes that challenge norms. Companies embracing innovation gain \na competitive edge, shaping the future of their sectors.",
         "boundingBox": "38.80950927734375,473.41058349609375,558.7155151367188,492.1785583496094"
       }
     ],
-    "imagesModelsList": [
+    "images_models_list": [
       {
-        "imageXPos": "-297.10400390625",
-        "imageYPos": "-31.4263916015625",
-        "imageWidth": "1350",
-        "imageHeight": "682"
+        "left": -297.10400390625,
+        "top": -31.4263916015625,
+        "end_left": 674.4586181640625,
+        "end_top": 459.55938720703125,
+        "image_width": 1350,
+        "image_height": 682
       },
       {
-        "imageXPos": "170.04168701171875",
-        "imageYPos": "244.4442138671875",
-        "imageWidth": "184",
-        "imageHeight": "177"
+        "left": 170.04168701171875,
+        "top": 244.4442138671875,
+        "end_left": 302.46923828125,
+        "end_top": 371.2850036621094,
+        "image_width": 184,
+        "image_height": 177
       },
       {
-        "imageXPos": "210.40975952148438",
-        "imageYPos": "331.904052734375",
-        "imageWidth": "223",
-        "imageHeight": "125"
+        "left": 210.40975952148438,
+        "top": 331.904052734375,
+        "end_left": 370.3865051269531,
+        "end_top": 421.8909912109375,
+        "image_width": 223,
+        "image_height": 125
       },
       {
-        "imageXPos": "0.0",
-        "imageYPos": "667.0",
-        "imageWidth": "596",
-        "imageHeight": "46"
+        "left": 0.0,
+        "top": 667.0,
+        "end_left": 596.0,
+        "end_top": 713.0,
+        "image_width": 596,
+        "image_height": 46
       },
       {
-        "imageXPos": "0.0",
-        "imageYPos": "667.0",
-        "imageWidth": "596",
-        "imageHeight": "46"
+        "left": 0.0,
+        "top": 667.0,
+        "end_left": 596.0,
+        "end_top": 713.0,
+        "image_width": 596,
+        "image_height": 46
       },
       {
-        "imageXPos": "29.760000228881836",
-        "imageYPos": "565.2769775390625",
-        "imageWidth": "124",
-        "imageHeight": "112"
+        "left": 29.760000228881836,
+        "top": 565.2769775390625,
+        "end_left": 118.79999542236328,
+        "end_top": 645.677001953125,
+        "image_width": 124,
+        "image_height": 112
       },
       {
-        "imageXPos": "43.0",
-        "imageYPos": "572.0",
-        "imageWidth": "63",
-        "imageHeight": "56"
+        "left": 43.0,
+        "top": 572.0,
+        "end_left": 106.0,
+        "end_top": 628.0,
+        "image_width": 63,
+        "image_height": 56
       },
       {
-        "imageXPos": "23.0",
-        "imageYPos": "551.0",
-        "imageWidth": "103",
-        "imageHeight": "97"
+        "left": 23.0,
+        "top": 551.0,
+        "end_left": 126.0,
+        "end_top": 648.0,
+        "image_width": 103,
+        "image_height": 97
       },
       {
-        "imageXPos": "94.08000183105469",
-        "imageYPos": "565.2769775390625",
-        "imageWidth": "124",
-        "imageHeight": "112"
+        "left": 94.08000183105469,
+        "top": 565.2769775390625,
+        "end_left": 183.1199951171875,
+        "end_top": 645.677001953125,
+        "image_width": 124,
+        "image_height": 112
       },
       {
-        "imageXPos": "107.0",
-        "imageYPos": "572.0",
-        "imageWidth": "63",
-        "imageHeight": "56"
+        "left": 107.0,
+        "top": 572.0,
+        "end_left": 170.0,
+        "end_top": 628.0,
+        "image_width": 63,
+        "image_height": 56
       },
       {
-        "imageXPos": "87.0",
-        "imageYPos": "551.0",
-        "imageWidth": "103",
-        "imageHeight": "97"
+        "left": 87.0,
+        "top": 551.0,
+        "end_left": 190.0,
+        "end_top": 648.0,
+        "image_width": 103,
+        "image_height": 97
       },
       {
-        "imageXPos": "158.16000366210938",
-        "imageYPos": "565.2769775390625",
-        "imageWidth": "124",
-        "imageHeight": "112"
+        "left": 158.16000366210938,
+        "top": 565.2769775390625,
+        "end_left": 247.1999969482422,
+        "end_top": 645.677001953125,
+        "image_width": 124,
+        "image_height": 112
       },
       {
-        "imageXPos": "171.0",
-        "imageYPos": "572.0",
-        "imageWidth": "63",
-        "imageHeight": "56"
+        "left": 171.0,
+        "top": 572.0,
+        "end_left": 234.0,
+        "end_top": 628.0,
+        "image_width": 63,
+        "image_height": 56
       },
       {
-        "imageXPos": "151.0",
-        "imageYPos": "551.0",
-        "imageWidth": "103",
-        "imageHeight": "97"
+        "left": 151.0,
+        "top": 551.0,
+        "end_left": 254.0,
+        "end_top": 648.0,
+        "image_width": 103,
+        "image_height": 97
       },
       {
-        "imageXPos": "222.47999572753906",
-        "imageYPos": "565.2769775390625",
-        "imageWidth": "124",
-        "imageHeight": "112"
+        "left": 222.47999572753906,
+        "top": 565.2769775390625,
+        "end_left": 311.5199890136719,
+        "end_top": 645.677001953125,
+        "image_width": 124,
+        "image_height": 112
       },
       {
-        "imageXPos": "235.0",
-        "imageYPos": "572.0",
-        "imageWidth": "63",
-        "imageHeight": "56"
+        "left": 235.0,
+        "top": 572.0,
+        "end_left": 298.0,
+        "end_top": 628.0,
+        "image_width": 63,
+        "image_height": 56
       },
       {
-        "imageXPos": "215.0",
-        "imageYPos": "551.0",
-        "imageWidth": "103",
-        "imageHeight": "97"
+        "left": 215.0,
+        "top": 551.0,
+        "end_left": 318.0,
+        "end_top": 648.0,
+        "image_width": 103,
+        "image_height": 97
       },
       {
-        "imageXPos": "289.20001220703125",
-        "imageYPos": "565.2769775390625",
-        "imageWidth": "124",
-        "imageHeight": "112"
+        "left": 289.20001220703125,
+        "top": 565.2769775390625,
+        "end_left": 378.239990234375,
+        "end_top": 645.677001953125,
+        "image_width": 124,
+        "image_height": 112
       },
       {
-        "imageXPos": "302.0",
-        "imageYPos": "572.0",
-        "imageWidth": "63",
-        "imageHeight": "56"
+        "left": 302.0,
+        "top": 572.0,
+        "end_left": 365.0,
+        "end_top": 628.0,
+        "image_width": 63,
+        "image_height": 56
       },
       {
-        "imageXPos": "282.0",
-        "imageYPos": "551.0",
-        "imageWidth": "103",
-        "imageHeight": "97"
+        "left": 282.0,
+        "top": 551.0,
+        "end_left": 385.0,
+        "end_top": 648.0,
+        "image_width": 103,
+        "image_height": 97
       },
       {
-        "imageXPos": "353.5199890136719",
-        "imageYPos": "565.2769775390625",
-        "imageWidth": "124",
-        "imageHeight": "112"
+        "left": 353.5199890136719,
+        "top": 565.2769775390625,
+        "end_left": 442.55999755859375,
+        "end_top": 645.677001953125,
+        "image_width": 124,
+        "image_height": 112
       },
       {
-        "imageXPos": "366.0",
-        "imageYPos": "572.0",
-        "imageWidth": "63",
-        "imageHeight": "56"
+        "left": 366.0,
+        "top": 572.0,
+        "end_left": 429.0,
+        "end_top": 628.0,
+        "image_width": 63,
+        "image_height": 56
       },
       {
-        "imageXPos": "346.0",
-        "imageYPos": "551.0",
-        "imageWidth": "103",
-        "imageHeight": "97"
+        "left": 346.0,
+        "top": 551.0,
+        "end_left": 449.0,
+        "end_top": 648.0,
+        "image_width": 103,
+        "image_height": 97
       },
       {
-        "imageXPos": "417.6000061035156",
-        "imageYPos": "565.2769775390625",
-        "imageWidth": "124",
-        "imageHeight": "112"
+        "left": 417.6000061035156,
+        "top": 565.2769775390625,
+        "end_left": 506.6400146484375,
+        "end_top": 645.677001953125,
+        "image_width": 124,
+        "image_height": 112
       },
       {
-        "imageXPos": "431.0",
-        "imageYPos": "572.0",
-        "imageWidth": "63",
-        "imageHeight": "56"
+        "left": 431.0,
+        "top": 572.0,
+        "end_left": 494.0,
+        "end_top": 628.0,
+        "image_width": 63,
+        "image_height": 56
       },
       {
-        "imageXPos": "411.0",
-        "imageYPos": "551.0",
-        "imageWidth": "103",
-        "imageHeight": "97"
+        "left": 411.0,
+        "top": 551.0,
+        "end_left": 514.0,
+        "end_top": 648.0,
+        "image_width": 103,
+        "image_height": 97
       },
       {
-        "imageXPos": "481.9200134277344",
-        "imageYPos": "565.2769775390625",
-        "imageWidth": "124",
-        "imageHeight": "112"
+        "left": 481.9200134277344,
+        "top": 565.2769775390625,
+        "end_left": 570.9600219726562,
+        "end_top": 645.677001953125,
+        "image_width": 124,
+        "image_height": 112
       },
       {
-        "imageXPos": "495.0",
-        "imageYPos": "572.0",
-        "imageWidth": "63",
-        "imageHeight": "56"
+        "left": 495.0,
+        "top": 572.0,
+        "end_left": 558.0,
+        "end_top": 628.0,
+        "image_width": 63,
+        "image_height": 56
       },
       {
-        "imageXPos": "475.0",
-        "imageYPos": "551.0",
-        "imageWidth": "103",
-        "imageHeight": "97"
+        "left": 475.0,
+        "top": 551.0,
+        "end_left": 578.0,
+        "end_top": 648.0,
+        "image_width": 103,
+        "image_height": 97
       }
     ]
   },
   {
-    "pageNumber": "2",
-    "pageWidth": "595.2760009765625",
-    "pageHight": "841.8900146484375",
-    "textsModelsList": [
-      {
-        "parentBlockNumber": "0",
-        "textBoxName": "WHO CAN INVEST IN SBI INNOVATIVE OPPORTUNITIES FUND?",
-        "textXPos": "39.6416015625",
-        "textYPos": "342.9818420410156",
-        "textBoundingBox": "39.6416015625,342.9818420410156,293.86431884765625,352.1498107910156",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "1",
-        "textBoxName": "Investors looking for a fund that consistently seeks out investment opportunities in upcoming trends and disruptive business ideas will ",
-        "textXPos": "68.05760192871094",
-        "textYPos": "369.5498352050781",
-        "textBoundingBox": "68.05760192871094,369.5498352050781,574.6490478515625,378.7178039550781",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "1",
-        "textBoxName": "find this fund true to label.",
-        "textXPos": "68.05760192871094",
-        "textYPos": "379.14984130859375",
-        "textBoundingBox": "68.05760192871094,379.14984130859375,165.26425170898438,388.31781005859375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "2",
-        "textBoxName": "Investors seeking capital appreciation through investments in forward-looking business ideas and a growth-oriented long-term portfolio ",
-        "textXPos": "68.05760192871094",
-        "textYPos": "393.14984130859375",
-        "textBoundingBox": "68.05760192871094,393.14984130859375,574.6329956054688,402.31781005859375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "2",
-        "textBoxName": "will find this fund appealing.",
-        "textXPos": "68.05760192871094",
-        "textYPos": "402.7498474121094",
-        "textBoundingBox": "68.05760192871094,402.7498474121094,171.68023681640625,411.9178161621094",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "3",
-        "textBoxName": "Investors seeking diversification through portfolio allocation across sectors and market caps, offering a unique avenue to tap into ",
-        "textXPos": "68.05760192871094",
-        "textYPos": "416.7498474121094",
-        "textBoundingBox": "68.05760192871094,416.7498474121094,574.6450805664062,425.9178161621094",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "3",
-        "textBoxName": "emerging trends and markets.",
-        "textXPos": "68.05760192871094",
-        "textYPos": "426.349853515625",
-        "textBoundingBox": "68.05760192871094,426.349853515625,179.72023010253906,435.517822265625",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "4",
-        "textBoxName": "1",
-        "textXPos": "49.07229995727539",
-        "textYPos": "374.8321228027344",
-        "textBoundingBox": "49.07229995727539,374.8321228027344,53.954593658447266,384.8924560546875",
-        "fontSize": 8.77869987487793,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "5",
-        "textBoxName": "2",
-        "textXPos": "49.07229995727539",
-        "textYPos": "398.3702392578125",
-        "textBoundingBox": "49.07229995727539,398.3702392578125,53.954593658447266,408.4305725097656",
-        "fontSize": 8.77869987487793,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "6",
-        "textBoxName": "3",
-        "textXPos": "49.07229995727539",
-        "textYPos": "422.3692321777344",
-        "textBoundingBox": "49.07229995727539,422.3692321777344,53.954593658447266,432.4295654296875",
-        "fontSize": 8.77869987487793,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "7",
-        "textBoxName": "INVESTMENT STRATEGY",
-        "textXPos": "39.6416015625",
-        "textYPos": "53.89581298828125",
-        "textBoundingBox": "39.6416015625,53.89581298828125,140.5855255126953,63.06378173828125",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "8",
-        "textBoxName": "Product / Service Innovators : ",
-        "textXPos": "73.39360046386719",
-        "textYPos": "78.6077880859375",
-        "textBoundingBox": "73.39360046386719,78.6077880859375,193.78431701660156,87.7757568359375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "8",
-        "textBoxName": "Companies that develop new products or services or significantly invest in R&D for new innovations. ",
-        "textXPos": "193.94566345214844",
-        "textYPos": "78.6077880859375",
-        "textBoundingBox": "193.94566345214844,78.6077880859375,565.920166015625,87.7757568359375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "8",
-        "textBoxName": "They challenge existing markets or create entirely new categories.",
-        "textXPos": "73.39360046386719",
-        "textYPos": "88.207763671875",
-        "textBoundingBox": "73.39360046386719,88.207763671875,318.1044006347656,97.375732421875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "9",
-        "textBoxName": "Process Innovators : ",
-        "textXPos": "73.39360046386719",
-        "textYPos": "107.40777587890625",
-        "textBoundingBox": "73.39360046386719,107.40777587890625,157.95228576660156,116.57574462890625",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "9",
-        "textBoxName": "Companies that innovate new processes, potentially disrupting existing business models and gaining market ",
-        "textXPos": "158.11363220214844",
-        "textYPos": "107.40777587890625",
-        "textBoundingBox": "158.11363220214844,107.40777587890625,559.9682006835938,116.57574462890625",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "9",
-        "textBoxName": "share through technological and process advancements.",
-        "textXPos": "73.39360046386719",
-        "textYPos": "117.00775146484375",
-        "textBoundingBox": "73.39360046386719,117.00775146484375,282.2563781738281,126.17572021484375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "10",
-        "textBoxName": "Innovation Adaptors : ",
-        "textXPos": "73.39360046386719",
-        "textYPos": "136.207763671875",
-        "textBoundingBox": "73.39360046386719,136.207763671875,161.6482696533203,145.375732421875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "10",
-        "textBoxName": "Incumbent companies that adapt to innovative business models, products, or services within their industry, ",
-        "textXPos": "161.8096160888672",
-        "textYPos": "136.207763671875",
-        "textBoundingBox": "161.8096160888672,136.207763671875,557.1521606445312,145.375732421875",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "10",
-        "textBoxName": "showing agility in response to emergent trends. These adaptive innovators may not necessarily overhaul their entire business model ",
-        "textXPos": "73.39360046386719",
-        "textYPos": "145.8077392578125",
-        "textBoundingBox": "73.39360046386719,145.8077392578125,563.2802124023438,154.9757080078125",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "10",
-        "textBoxName": "but exhibit innovative strategies in specific segments or verticals that has potential to meaningfully impact the business.",
-        "textXPos": "73.39360046386719",
-        "textYPos": "155.40771484375",
-        "textBoundingBox": "73.39360046386719,155.40771484375,513.9845581054688,164.57568359375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "11",
-        "textBoxName": "Each category presents opportunities and risks, which will guide investment decisions. For detailed investment strategy please refer Scheme Information Document carefully.",
-        "textXPos": "36.35449981689453",
-        "textYPos": "172.8157958984375",
-        "textBoundingBox": "36.35449981689453,172.8157958984375,572.1123657226562,180.8377685546875",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "12",
-        "textBoxName": "1",
-        "textXPos": "49.30080032348633",
-        "textYPos": "83.57987976074219",
-        "textBoundingBox": "49.30080032348633,83.57987976074219,54.627906799316406,94.55680847167969",
-        "fontSize": 9.578499794006348,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "13",
-        "textBoxName": "2",
-        "textXPos": "49.30080032348633",
-        "textYPos": "115.02622985839844",
-        "textBoundingBox": "49.30080032348633,115.02622985839844,54.627906799316406,126.00315856933594",
-        "fontSize": 9.578499794006348,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "14",
-        "textBoxName": "3",
-        "textXPos": "49.30080032348633",
-        "textYPos": "146.4495086669922",
-        "textBoundingBox": "49.30080032348633,146.4495086669922,54.627906799316406,157.4264373779297",
-        "fontSize": 9.578499794006348,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "15",
-        "textBoxName": "SBI INNOVATIVE OPPORTUNITIES FUND",
-        "textXPos": "197.45260620117188",
-        "textYPos": "7.1204833984375",
-        "textBoundingBox": "197.45260620117188,7.1204833984375,397.8342590332031,18.5804443359375",
-        "fontSize": 10.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "16",
-        "textBoxName": "PORTFOLIO CONSTRUCTION APPROACH",
-        "textXPos": "39.36130142211914",
-        "textYPos": "206.12042236328125",
-        "textBoundingBox": "39.36130142211914,206.12042236328125,206.69862365722656,215.28839111328125",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "17",
-        "textBoxName": "Min 80% of net assets investing into companies falling into innovation theme buckets",
-        "textXPos": "54.241302490234375",
-        "textYPos": "230.8323974609375",
-        "textBoundingBox": "54.241302490234375,230.8323974609375,370.53753662109375,240.0003662109375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "18",
-        "textBoxName": "Upto 35% of net assets investing into global stocks aligned with the underlying theme",
-        "textXPos": "54.241302490234375",
-        "textYPos": "244.8323974609375",
-        "textBoundingBox": "54.241302490234375,244.8323974609375,372.5227355957031,254.0003662109375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "19",
-        "textBoxName": "True to its label diversified portfolio investing across sectors & Market cap",
-        "textXPos": "54.241302490234375",
-        "textYPos": "258.8323974609375",
-        "textBoundingBox": "54.241302490234375,258.8323974609375,329.9786071777344,268.0003662109375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "20",
-        "textBoxName": "Aims to have a portfolio of ~35-40 stocks with bottom-up stock selection approach",
-        "textXPos": "54.241302490234375",
-        "textYPos": "272.8323974609375",
-        "textBoundingBox": "54.241302490234375,272.8323974609375,359.9306945800781,282.0003662109375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "21",
-        "textBoxName": "Companies with long runway for growth, competitive advantage, potential for generating strong ROE & cashflows etc",
-        "textXPos": "54.241302490234375",
-        "textYPos": "286.8323974609375",
-        "textBoundingBox": "54.241302490234375,286.8323974609375,489.265869140625,296.0003662109375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "22",
-        "textBoxName": "Further, to achieve diversification the Scheme may also invest residual net assets i.e. up to 20% of the net assets in companies other than the companies following innovation theme. ",
-        "textXPos": "36.35449981689453",
-        "textYPos": "305.4852294921875",
-        "textBoundingBox": "36.35449981689453,305.4852294921875,574.0460205078125,312.9342041015625",
-        "fontSize": 6.5,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "22",
-        "textBoxName": "This is based on the prevailing market conditions & current views and is subject to change within the limits of the SID basis the fund manager's view.",
-        "textXPos": "36.35449981689453",
-        "textYPos": "313.4212646484375",
-        "textBoundingBox": "36.35449981689453,313.4212646484375,510.86236572265625,321.4432373046875",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "28",
-        "textBoxName": "Investors understand that their principal ",
-        "textXPos": "163.16600036621094",
-        "textYPos": "698.7822875976562",
-        "textBoundingBox": "163.16600036621094,698.7822875976562,241.0760040283203,703.190185546875",
-        "fontSize": 4.407899856567383,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "28",
-        "textBoxName": "will be at very high risk",
-        "textXPos": "179.76614379882812",
-        "textYPos": "703.190185546875",
-        "textBoundingBox": "179.76614379882812,703.190185546875,223.38583374023438,707.5980834960938",
-        "fontSize": 4.407899856567383,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "29",
-        "textBoxName": "\u2022 Long term Capital appreciation",
-        "textXPos": "254.00100708007812",
-        "textYPos": "663.2131958007812",
-        "textBoundingBox": "254.00100708007812,663.2131958007812,346.4540100097656,670.2131958007812",
-        "fontSize": 7.0,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "30",
-        "textBoxName": "\u2022 Investment in equity and equity related instruments of companies engaged in",
-        "textXPos": "254.00100708007812",
-        "textYPos": "674.9522094726562",
-        "textBoundingBox": "254.00100708007812,674.9522094726562,478.97283935546875,681.9522094726562",
-        "fontSize": 7.0,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "30",
-        "textBoxName": "   and/or expected to bene\ufb01t from adoption of innovative strategies & theme.",
-        "textXPos": "254.00100708007812",
-        "textYPos": "681.9522094726562",
-        "textBoundingBox": "254.00100708007812,681.9522094726562,473.462890625,688.9522094726562",
-        "fontSize": 7.0,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "31",
-        "textBoxName": "This product is suitable for investors who are seeking^:",
-        "textXPos": "254.970703125",
-        "textYPos": "643.2740478515625",
-        "textBoundingBox": "254.970703125,643.2740478515625,449.1496276855469,651.3062744140625",
-        "fontSize": 8.03219985961914,
-        "fontFamily": "Calibri-Bold"
-      },
-      {
-        "parentBlockNumber": "32",
-        "textBoxName": "^",
-        "textXPos": "254.87010192871094",
-        "textYPos": "699.68359375",
-        "textBoundingBox": "254.87010192871094,699.68359375,257.2023620605469,704.3663940429688",
-        "fontSize": 4.682799816131592,
-        "fontFamily": "Calibri-Bold"
-      },
-      {
-        "parentBlockNumber": "32",
-        "textBoxName": "Investors should consult their \ufb01nancial advisers if in doubt about whether the product is suitable for them.",
-        "textXPos": "257.3193054199219",
-        "textYPos": "702.1044311523438",
-        "textBoundingBox": "257.3193054199219,702.1044311523438,476.2846374511719,707.12451171875",
-        "fontSize": 5.020100116729736,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "33",
-        "textBoxName": "The benchmark riskometer",
-        "textXPos": "509.1767883300781",
-        "textYPos": "698.7736206054688",
-        "textBoundingBox": "509.1767883300781,698.7736206054688,560.0617065429688,703.1815185546875",
-        "fontSize": 4.407899856567383,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "33",
-        "textBoxName": "is at Very High risk",
-        "textXPos": "517.0933837890625",
-        "textYPos": "703.1815185546875",
-        "textBoundingBox": "517.0933837890625,703.1815185546875,552.1459350585938,707.5894165039062",
-        "fontSize": 4.407899856567383,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "34",
-        "textBoxName": "Benchmark Riskometer:",
-        "textXPos": "511.63641357421875",
-        "textYPos": "641.977783203125",
-        "textBoundingBox": "511.63641357421875,641.977783203125,556.663818359375,646.3856811523438",
-        "fontSize": 4.407899856567383,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "34",
-        "textBoxName": "Benchmark Riskometer - Nifty 500 TRI",
-        "textXPos": "498.3245544433594",
-        "textYPos": "646.3857421875",
-        "textBoundingBox": "498.3245544433594,646.3857421875,569.9730834960938,650.7936401367188",
-        "fontSize": 4.407899856567383,
-        "fontFamily": "Calibri"
-      },
-      {
-        "parentBlockNumber": "35",
-        "textBoxName": "This leaflet is for information purposes only and is not an offer to sell or a solicitation to buy any mutual fund units/securities. The views expressed herein are based on the ",
-        "textXPos": "18.781299591064453",
-        "textYPos": "727.9417724609375",
-        "textBoundingBox": "18.781299591064453,727.9417724609375,580.4494018554688,735.9637451171875",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "35",
-        "textBoxName": "basis of internal data, publicly available information & other sources believed to be reliable. Any calculations made are approximations meant as guidelines only, which need ",
-        "textXPos": "18.781299591064453",
-        "textYPos": "736.9437866210938",
-        "textBoundingBox": "18.781299591064453,736.9437866210938,580.3541259765625,744.9657592773438",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "35",
-        "textBoxName": "to be confirmed before relying on them.  These views alone are not sufficient and should not be used for the development or implementation of an investment strategy. It ",
-        "textXPos": "18.781299591064453",
-        "textYPos": "745.94580078125",
-        "textBoundingBox": "18.781299591064453,745.94580078125,580.3831176757812,753.9677734375",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "35",
-        "textBoxName": "should not be construed as investment advice to any party. All opinions and estimates included here constitute our view as of this date and are subject to change without ",
-        "textXPos": "18.781299591064453",
-        "textYPos": "754.94775390625",
-        "textBoundingBox": "18.781299591064453,754.94775390625,580.3790893554688,762.9697265625",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "35",
-        "textBoxName": "notice. Neither SBI Funds Management Limited, SBI Mutual Fund nor any person connected with it, accepts any liability arising from the use of this information. The recipient ",
-        "textXPos": "18.781299591064453",
-        "textYPos": "763.9497680664062",
-        "textBoundingBox": "18.781299591064453,763.9497680664062,580.3897705078125,771.9717407226562",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "35",
-        "textBoxName": "of this material should rely on their investigations and take their own professional advice.",
-        "textXPos": "18.781299591064453",
-        "textYPos": "772.9517822265625",
-        "textBoundingBox": "18.781299591064453,772.9517822265625,308.6011047363281,780.9737548828125",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "36",
-        "textBoxName": "Investment Objective:",
-        "textXPos": "40.05759811401367",
-        "textYPos": "486.7337341308594",
-        "textBoundingBox": "40.05759811401367,486.7337341308594,127.19367218017578,495.9017028808594",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "36",
-        "textBoxName": "The investment objective of the scheme is to provide investors with opportunities for long term capital appreciation by investing in equity and ",
-        "textXPos": "40.05759811401367",
-        "textYPos": "496.7337341308594",
-        "textBoundingBox": "40.05759811401367,496.7337341308594,567.7211303710938,505.9017028808594",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "36",
-        "textBoxName": "equity related instruments of companies that seeks to benefit from adoption of innovative strategies & theme. However, there can be no ",
-        "textXPos": "40.05759811401367",
-        "textYPos": "506.7337646484375",
-        "textBoundingBox": "40.05759811401367,506.7337646484375,567.7576293945312,515.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "36",
-        "textBoxName": "assurance that the investment objective of the Scheme will be realized.",
-        "textXPos": "40.05759811401367",
-        "textYPos": "516.7337646484375",
-        "textBoundingBox": "40.05759811401367,516.7337646484375,305.2803039550781,525.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "\u2022 Fund Manager",
-        "textXPos": "40.05759811401367",
-        "textYPos": "532.7337646484375",
-        "textBoundingBox": "40.05759811401367,532.7337646484375,99.70567321777344,541.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "&",
-        "textXPos": "99.91210174560547",
-        "textYPos": "533.1646118164062",
-        "textBoundingBox": "99.91210174560547,533.1646118164062,103.02295684814453,538.509521484375",
-        "fontSize": 4.664000034332275,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": ": Mr. Prasad Padala     \u2022 Category: Thematic     \u2022 Minimum Application^: ",
-        "textXPos": "103.13960266113281",
-        "textYPos": "532.7337646484375",
-        "textBoundingBox": "103.13960266113281,532.7337646484375,372.3144836425781,541.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "`",
-        "textXPos": "372.5158386230469",
-        "textYPos": "532.7298583984375",
-        "textBoundingBox": "372.5158386230469,532.7298583984375,376.5158386230469,542.0423583984375",
-        "fontSize": 8.0,
-        "fontFamily": "RupeeForadian"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "5000/- & in multiples of ",
-        "textXPos": "376.7236022949219",
-        "textYPos": "532.7337646484375",
-        "textBoundingBox": "376.7236022949219,532.7337646484375,465.1145324707031,541.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "`",
-        "textXPos": "465.3158874511719",
-        "textYPos": "532.7298583984375",
-        "textBoundingBox": "465.3158874511719,532.7298583984375,469.3158874511719,542.0423583984375",
-        "fontSize": 8.0,
-        "fontFamily": "RupeeForadian"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "1 thereafter",
-        "textXPos": "469.52362060546875",
-        "textYPos": "532.7337646484375",
-        "textBoundingBox": "469.52362060546875,532.7337646484375,512.6358032226562,541.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "\u2022 First Tier Banchmark Index: NIFTY 500 TRI     \u2022 Minimum Monthly SIP*: ",
-        "textXPos": "40.05963134765625",
-        "textYPos": "544.7337646484375",
-        "textBoundingBox": "40.05963134765625,544.7337646484375,315.0423583984375,553.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "`",
-        "textXPos": "315.24371337890625",
-        "textYPos": "544.7298583984375",
-        "textBoundingBox": "315.24371337890625,544.7298583984375,319.24371337890625,554.0423583984375",
-        "fontSize": 8.0,
-        "fontFamily": "RupeeForadian"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "500/- & in multiples of ",
-        "textXPos": "319.4356384277344",
-        "textYPos": "544.7337646484375",
-        "textBoundingBox": "319.4356384277344,544.7337646484375,403.1785583496094,553.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "`",
-        "textXPos": "403.3799133300781",
-        "textYPos": "544.7298583984375",
-        "textBoundingBox": "403.3799133300781,544.7298583984375,407.3799133300781,554.0423583984375",
-        "fontSize": 8.0,
-        "fontFamily": "RupeeForadian"
-      },
-      {
-        "parentBlockNumber": "37",
-        "textBoxName": "1",
-        "textXPos": "407.587646484375",
-        "textYPos": "544.7337646484375",
-        "textBoundingBox": "407.587646484375,544.7337646484375,412.036865234375,553.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "38",
-        "textBoxName": "Exit Load:",
-        "textXPos": "40.05963134765625",
-        "textYPos": "560.7337646484375",
-        "textBoundingBox": "40.05963134765625,560.7337646484375,80.53169250488281,569.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "38",
-        "textBoxName": "\u2022 For Ongoing basis: 1% of the applicable NAV - If units purchased or switched in from another scheme of the fund are redeemed or switched  ",
-        "textXPos": "40.05963134765625",
-        "textYPos": "570.7337646484375",
-        "textBoundingBox": "40.05963134765625,570.7337646484375,570.1774291992188,579.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "38",
-        "textBoxName": "  out on or before 1 year from the date of allotment.",
-        "textXPos": "40.05963134765625",
-        "textYPos": "580.7337646484375",
-        "textBoundingBox": "40.05963134765625,580.7337646484375,231.00221252441406,589.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "38",
-        "textBoxName": "\u2022 NIL - If units purchased or switched in from another scheme of the fund are redeemed or switched out after 1 year from the date of allotment.",
-        "textXPos": "40.05963134765625",
-        "textYPos": "590.7337646484375",
-        "textBoundingBox": "40.05963134765625,590.7337646484375,571.0510864257812,599.9017333984375",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "39",
-        "textBoxName": "ABOUT SBI INNOVATIVE OPPORTUNITIES FUND",
-        "textXPos": "40.6786994934082",
-        "textYPos": "461.9271545410156",
-        "textBoundingBox": "40.6786994934082,461.9271545410156,235.40798950195312,471.0951232910156",
-        "fontSize": 8.0,
-        "fontFamily": "Helvetica-Bold"
-      },
-      {
-        "parentBlockNumber": "40",
-        "textBoxName": "For details, please refer to the Scheme Information Document (SID). ",
-        "textXPos": "38.11520004272461",
-        "textYPos": "606.6693115234375",
-        "textBoundingBox": "38.11520004272461,606.6693115234375,270.6051330566406,614.6912841796875",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "40",
-        "textBoxName": "&",
-        "textXPos": "271.5967102050781",
-        "textYPos": "607.0463256835938",
-        "textBoundingBox": "271.5967102050781,607.0463256835938,274.3186950683594,611.72314453125",
-        "fontSize": 4.080999851226807,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "40",
-        "textBoxName": "Mr. Pradeep Kesavan is the dedicated fund manager for overseas securities. ^Additional ",
-        "textXPos": "274.4198913574219",
-        "textYPos": "606.6693115234375",
-        "textBoundingBox": "274.4198913574219,606.6693115234375,573.8782958984375,614.6912841796875",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
-      },
-      {
-        "parentBlockNumber": "40",
-        "textBoxName": "Purchase: Rs. 1000 and in multiples of Re.1 thereafter. *For detailed minimum amount of SIP across frequencies & number of installments, please refer to SID/KIM. ",
-        "textXPos": "38.1138916015625",
-        "textYPos": "615.6712646484375",
-        "textBoundingBox": "38.1138916015625,615.6712646484375,575.1661987304688,623.6932373046875",
-        "fontSize": 7.0,
-        "fontFamily": "Helvetica"
+    "page_number": 2,
+    "page_width": 595.2760009765625,
+    "page_height": 841.8900146484375,
+    "texts_models_list": [
+      {
+        "parent_block_number": 0,
+        "original_text": "WHO CAN INVEST IN SBI INNOVATIVE OPPORTUNITIES FUND?",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 16777215,
+        "font_color_hex": "#FFFFFF",
+        "font_style": "sans proportional bold",
+        "left": 39.6416015625,
+        "top": 342.9818420410156,
+        "end_left": 293.86431884765625,
+        "end_top": 352.1498107910156
+      },
+      {
+        "parent_block_number": 1,
+        "original_text": "Investors looking for a fund that consistently seeks out investment opportunities in upcoming trends and disruptive business ideas will ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 16777215,
+        "font_color_hex": "#FFFFFF",
+        "font_style": "sans proportional",
+        "left": 68.05760192871094,
+        "top": 369.5498352050781,
+        "end_left": 574.6490478515625,
+        "end_top": 378.7178039550781
+      },
+      {
+        "parent_block_number": 1,
+        "original_text": "find this fund true to label.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 16777215,
+        "font_color_hex": "#FFFFFF",
+        "font_style": "sans proportional",
+        "left": 68.05760192871094,
+        "top": 379.14984130859375,
+        "end_left": 165.26425170898438,
+        "end_top": 388.31781005859375
+      },
+      {
+        "parent_block_number": 2,
+        "original_text": "Investors seeking capital appreciation through investments in forward-looking business ideas and a growth-oriented long-term portfolio ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 16777215,
+        "font_color_hex": "#FFFFFF",
+        "font_style": "sans proportional",
+        "left": 68.05760192871094,
+        "top": 393.14984130859375,
+        "end_left": 574.6329956054688,
+        "end_top": 402.31781005859375
+      },
+      {
+        "parent_block_number": 2,
+        "original_text": "will find this fund appealing.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 16777215,
+        "font_color_hex": "#FFFFFF",
+        "font_style": "sans proportional",
+        "left": 68.05760192871094,
+        "top": 402.7498474121094,
+        "end_left": 171.68023681640625,
+        "end_top": 411.9178161621094
+      },
+      {
+        "parent_block_number": 3,
+        "original_text": "Investors seeking diversification through portfolio allocation across sectors and market caps, offering a unique avenue to tap into ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 16777215,
+        "font_color_hex": "#FFFFFF",
+        "font_style": "sans proportional",
+        "left": 68.05760192871094,
+        "top": 416.7498474121094,
+        "end_left": 574.6450805664062,
+        "end_top": 425.9178161621094
+      },
+      {
+        "parent_block_number": 3,
+        "original_text": "emerging trends and markets.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 16777215,
+        "font_color_hex": "#FFFFFF",
+        "font_style": "sans proportional",
+        "left": 68.05760192871094,
+        "top": 426.349853515625,
+        "end_left": 179.72023010253906,
+        "end_top": 435.517822265625
+      },
+      {
+        "parent_block_number": 4,
+        "original_text": "1",
+        "font_size": 8.77869987487793,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 49.07229995727539,
+        "top": 374.8321228027344,
+        "end_left": 53.954593658447266,
+        "end_top": 384.8924560546875
+      },
+      {
+        "parent_block_number": 5,
+        "original_text": "2",
+        "font_size": 8.77869987487793,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 49.07229995727539,
+        "top": 398.3702392578125,
+        "end_left": 53.954593658447266,
+        "end_top": 408.4305725097656
+      },
+      {
+        "parent_block_number": 6,
+        "original_text": "3",
+        "font_size": 8.77869987487793,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 49.07229995727539,
+        "top": 422.3692321777344,
+        "end_left": 53.954593658447266,
+        "end_top": 432.4295654296875
+      },
+      {
+        "parent_block_number": 7,
+        "original_text": "INVESTMENT STRATEGY",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 39.6416015625,
+        "top": 53.89581298828125,
+        "end_left": 140.5855255126953,
+        "end_top": 63.06378173828125
+      },
+      {
+        "parent_block_number": 8,
+        "original_text": "Product / Service Innovators : ",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional bold",
+        "left": 73.39360046386719,
+        "top": 78.6077880859375,
+        "end_left": 565.920166015625,
+        "end_top": 87.7757568359375
+      },
+      {
+        "parent_block_number": 8,
+        "original_text": "Companies that develop new products or services or significantly invest in R&D for new innovations. ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 73.39360046386719,
+        "top": 78.6077880859375,
+        "end_left": 565.920166015625,
+        "end_top": 87.7757568359375
+      },
+      {
+        "parent_block_number": 8,
+        "original_text": "They challenge existing markets or create entirely new categories.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 73.39360046386719,
+        "top": 88.207763671875,
+        "end_left": 318.1044006347656,
+        "end_top": 97.375732421875
+      },
+      {
+        "parent_block_number": 9,
+        "original_text": "Process Innovators : ",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional bold",
+        "left": 73.39360046386719,
+        "top": 107.40777587890625,
+        "end_left": 559.9682006835938,
+        "end_top": 116.57574462890625
+      },
+      {
+        "parent_block_number": 9,
+        "original_text": "Companies that innovate new processes, potentially disrupting existing business models and gaining market ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 73.39360046386719,
+        "top": 107.40777587890625,
+        "end_left": 559.9682006835938,
+        "end_top": 116.57574462890625
+      },
+      {
+        "parent_block_number": 9,
+        "original_text": "share through technological and process advancements.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 73.39360046386719,
+        "top": 117.00775146484375,
+        "end_left": 282.2563781738281,
+        "end_top": 126.17572021484375
+      },
+      {
+        "parent_block_number": 10,
+        "original_text": "Innovation Adaptors : ",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional bold",
+        "left": 73.39360046386719,
+        "top": 136.207763671875,
+        "end_left": 557.1521606445312,
+        "end_top": 145.375732421875
+      },
+      {
+        "parent_block_number": 10,
+        "original_text": "Incumbent companies that adapt to innovative business models, products, or services within their industry, ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 73.39360046386719,
+        "top": 136.207763671875,
+        "end_left": 557.1521606445312,
+        "end_top": 145.375732421875
+      },
+      {
+        "parent_block_number": 10,
+        "original_text": "showing agility in response to emergent trends. These adaptive innovators may not necessarily overhaul their entire business model ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 73.39360046386719,
+        "top": 145.8077392578125,
+        "end_left": 563.2802124023438,
+        "end_top": 154.9757080078125
+      },
+      {
+        "parent_block_number": 10,
+        "original_text": "but exhibit innovative strategies in specific segments or verticals that has potential to meaningfully impact the business.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 73.39360046386719,
+        "top": 155.40771484375,
+        "end_left": 513.9845581054688,
+        "end_top": 164.57568359375
+      },
+      {
+        "parent_block_number": 11,
+        "original_text": "Each category presents opportunities and risks, which will guide investment decisions. For detailed investment strategy please refer Scheme Information Document carefully.",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 36.35449981689453,
+        "top": 172.8157958984375,
+        "end_left": 572.1123657226562,
+        "end_top": 180.8377685546875
+      },
+      {
+        "parent_block_number": 12,
+        "original_text": "1",
+        "font_size": 9.578499794006348,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 49.30080032348633,
+        "top": 83.57987976074219,
+        "end_left": 54.627906799316406,
+        "end_top": 94.55680847167969
+      },
+      {
+        "parent_block_number": 13,
+        "original_text": "2",
+        "font_size": 9.578499794006348,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 49.30080032348633,
+        "top": 115.02622985839844,
+        "end_left": 54.627906799316406,
+        "end_top": 126.00315856933594
+      },
+      {
+        "parent_block_number": 14,
+        "original_text": "3",
+        "font_size": 9.578499794006348,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 49.30080032348633,
+        "top": 146.4495086669922,
+        "end_left": 54.627906799316406,
+        "end_top": 157.4264373779297
+      },
+      {
+        "parent_block_number": 15,
+        "original_text": "SBI INNOVATIVE OPPORTUNITIES FUND",
+        "font_size": 10.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 16777215,
+        "font_color_hex": "#FFFFFF",
+        "font_style": "sans proportional bold",
+        "left": 197.45260620117188,
+        "top": 7.1204833984375,
+        "end_left": 397.8342590332031,
+        "end_top": 18.5804443359375
+      },
+      {
+        "parent_block_number": 16,
+        "original_text": "PORTFOLIO CONSTRUCTION APPROACH",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 39.36130142211914,
+        "top": 206.12042236328125,
+        "end_left": 206.69862365722656,
+        "end_top": 215.28839111328125
+      },
+      {
+        "parent_block_number": 17,
+        "original_text": "Min 80% of net assets investing into companies falling into innovation theme buckets",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 54.241302490234375,
+        "top": 230.8323974609375,
+        "end_left": 370.53753662109375,
+        "end_top": 240.0003662109375
+      },
+      {
+        "parent_block_number": 18,
+        "original_text": "Upto 35% of net assets investing into global stocks aligned with the underlying theme",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 54.241302490234375,
+        "top": 244.8323974609375,
+        "end_left": 372.5227355957031,
+        "end_top": 254.0003662109375
+      },
+      {
+        "parent_block_number": 19,
+        "original_text": "True to its label diversified portfolio investing across sectors & Market cap",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 54.241302490234375,
+        "top": 258.8323974609375,
+        "end_left": 329.9786071777344,
+        "end_top": 268.0003662109375
+      },
+      {
+        "parent_block_number": 20,
+        "original_text": "Aims to have a portfolio of ~35-40 stocks with bottom-up stock selection approach",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 54.241302490234375,
+        "top": 272.8323974609375,
+        "end_left": 359.9306945800781,
+        "end_top": 282.0003662109375
+      },
+      {
+        "parent_block_number": 21,
+        "original_text": "Companies with long runway for growth, competitive advantage, potential for generating strong ROE & cashflows etc",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 54.241302490234375,
+        "top": 286.8323974609375,
+        "end_left": 489.265869140625,
+        "end_top": 296.0003662109375
+      },
+      {
+        "parent_block_number": 22,
+        "original_text": "Further, to achieve diversification the Scheme may also invest residual net assets i.e. up to 20% of the net assets in companies other than the companies following innovation theme. ",
+        "font_size": 6.5,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 36.35449981689453,
+        "top": 305.4852294921875,
+        "end_left": 574.0460205078125,
+        "end_top": 312.9342041015625
+      },
+      {
+        "parent_block_number": 22,
+        "original_text": "This is based on the prevailing market conditions & current views and is subject to change within the limits of the SID basis the fund manager's view.",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional",
+        "left": 36.35449981689453,
+        "top": 313.4212646484375,
+        "end_left": 510.86236572265625,
+        "end_top": 321.4432373046875
+      },
+      {
+        "parent_block_number": 28,
+        "original_text": "Investors understand that their principal ",
+        "font_size": 4.407899856567383,
+        "font_family": "Calibri",
+        "font_color": 65793,
+        "font_color_hex": "#010101",
+        "font_style": "sans proportional",
+        "left": 163.16600036621094,
+        "top": 698.7822875976562,
+        "end_left": 241.0760040283203,
+        "end_top": 703.190185546875
+      },
+      {
+        "parent_block_number": 28,
+        "original_text": "will be at very high risk",
+        "font_size": 4.407899856567383,
+        "font_family": "Calibri",
+        "font_color": 65793,
+        "font_color_hex": "#010101",
+        "font_style": "sans proportional",
+        "left": 179.76614379882812,
+        "top": 703.190185546875,
+        "end_left": 223.38583374023438,
+        "end_top": 707.5980834960938
+      },
+      {
+        "parent_block_number": 29,
+        "original_text": "\u2022 Long term Capital appreciation",
+        "font_size": 7.0,
+        "font_family": "Calibri",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 254.00100708007812,
+        "top": 663.2131958007812,
+        "end_left": 346.4540100097656,
+        "end_top": 670.2131958007812
+      },
+      {
+        "parent_block_number": 30,
+        "original_text": "\u2022 Investment in equity and equity related instruments of companies engaged in",
+        "font_size": 7.0,
+        "font_family": "Calibri",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 254.00100708007812,
+        "top": 674.9522094726562,
+        "end_left": 478.97283935546875,
+        "end_top": 681.9522094726562
+      },
+      {
+        "parent_block_number": 30,
+        "original_text": "   and/or expected to bene\ufb01t from adoption of innovative strategies & theme.",
+        "font_size": 7.0,
+        "font_family": "Calibri",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 254.00100708007812,
+        "top": 681.9522094726562,
+        "end_left": 473.462890625,
+        "end_top": 688.9522094726562
+      },
+      {
+        "parent_block_number": 31,
+        "original_text": "This product is suitable for investors who are seeking^:",
+        "font_size": 8.03219985961914,
+        "font_family": "Calibri-Bold",
+        "font_color": 16777215,
+        "font_color_hex": "#FFFFFF",
+        "font_style": "sans proportional bold",
+        "left": 254.970703125,
+        "top": 643.2740478515625,
+        "end_left": 449.1496276855469,
+        "end_top": 651.3062744140625
+      },
+      {
+        "parent_block_number": 32,
+        "original_text": "^",
+        "font_size": 4.682799816131592,
+        "font_family": "Calibri-Bold",
+        "font_color": 0,
+        "font_color_hex": "#000000",
+        "font_style": "sans proportional bold",
+        "left": 254.87010192871094,
+        "top": 699.68359375,
+        "end_left": 476.2846374511719,
+        "end_top": 707.12451171875
+      },
+      {
+        "parent_block_number": 32,
+        "original_text": "Investors should consult their \ufb01nancial advisers if in doubt about whether the product is suitable for them.",
+        "font_size": 5.020100116729736,
+        "font_family": "Calibri",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 254.87010192871094,
+        "top": 699.68359375,
+        "end_left": 476.2846374511719,
+        "end_top": 707.12451171875
+      },
+      {
+        "parent_block_number": 33,
+        "original_text": "The benchmark riskometer",
+        "font_size": 4.407899856567383,
+        "font_family": "Calibri",
+        "font_color": 65793,
+        "font_color_hex": "#010101",
+        "font_style": "sans proportional",
+        "left": 509.1767883300781,
+        "top": 698.7736206054688,
+        "end_left": 560.0617065429688,
+        "end_top": 703.1815185546875
+      },
+      {
+        "parent_block_number": 33,
+        "original_text": "is at Very High risk",
+        "font_size": 4.407899856567383,
+        "font_family": "Calibri",
+        "font_color": 65793,
+        "font_color_hex": "#010101",
+        "font_style": "sans proportional",
+        "left": 517.0933837890625,
+        "top": 703.1815185546875,
+        "end_left": 552.1459350585938,
+        "end_top": 707.5894165039062
+      },
+      {
+        "parent_block_number": 34,
+        "original_text": "Benchmark Riskometer:",
+        "font_size": 4.407899856567383,
+        "font_family": "Calibri",
+        "font_color": 65793,
+        "font_color_hex": "#010101",
+        "font_style": "sans proportional",
+        "left": 511.63641357421875,
+        "top": 641.977783203125,
+        "end_left": 556.663818359375,
+        "end_top": 646.3856811523438
+      },
+      {
+        "parent_block_number": 34,
+        "original_text": "Benchmark Riskometer - Nifty 500 TRI",
+        "font_size": 4.407899856567383,
+        "font_family": "Calibri",
+        "font_color": 65793,
+        "font_color_hex": "#010101",
+        "font_style": "sans proportional",
+        "left": 498.3245544433594,
+        "top": 646.3857421875,
+        "end_left": 569.9730834960938,
+        "end_top": 650.7936401367188
+      },
+      {
+        "parent_block_number": 35,
+        "original_text": "This leaflet is for information purposes only and is not an offer to sell or a solicitation to buy any mutual fund units/securities. The views expressed herein are based on the ",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 18.781299591064453,
+        "top": 727.9417724609375,
+        "end_left": 580.4494018554688,
+        "end_top": 735.9637451171875
+      },
+      {
+        "parent_block_number": 35,
+        "original_text": "basis of internal data, publicly available information & other sources believed to be reliable. Any calculations made are approximations meant as guidelines only, which need ",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 18.781299591064453,
+        "top": 736.9437866210938,
+        "end_left": 580.3541259765625,
+        "end_top": 744.9657592773438
+      },
+      {
+        "parent_block_number": 35,
+        "original_text": "to be confirmed before relying on them.  These views alone are not sufficient and should not be used for the development or implementation of an investment strategy. It ",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 18.781299591064453,
+        "top": 745.94580078125,
+        "end_left": 580.3831176757812,
+        "end_top": 753.9677734375
+      },
+      {
+        "parent_block_number": 35,
+        "original_text": "should not be construed as investment advice to any party. All opinions and estimates included here constitute our view as of this date and are subject to change without ",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 18.781299591064453,
+        "top": 754.94775390625,
+        "end_left": 580.3790893554688,
+        "end_top": 762.9697265625
+      },
+      {
+        "parent_block_number": 35,
+        "original_text": "notice. Neither SBI Funds Management Limited, SBI Mutual Fund nor any person connected with it, accepts any liability arising from the use of this information. The recipient ",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 18.781299591064453,
+        "top": 763.9497680664062,
+        "end_left": 580.3897705078125,
+        "end_top": 771.9717407226562
+      },
+      {
+        "parent_block_number": 35,
+        "original_text": "of this material should rely on their investigations and take their own professional advice.",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 18.781299591064453,
+        "top": 772.9517822265625,
+        "end_left": 308.6011047363281,
+        "end_top": 780.9737548828125
+      },
+      {
+        "parent_block_number": 36,
+        "original_text": "Investment Objective:",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 40.05759811401367,
+        "top": 486.7337341308594,
+        "end_left": 127.19367218017578,
+        "end_top": 495.9017028808594
+      },
+      {
+        "parent_block_number": 36,
+        "original_text": "The investment objective of the scheme is to provide investors with opportunities for long term capital appreciation by investing in equity and ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05759811401367,
+        "top": 496.7337341308594,
+        "end_left": 567.7211303710938,
+        "end_top": 505.9017028808594
+      },
+      {
+        "parent_block_number": 36,
+        "original_text": "equity related instruments of companies that seeks to benefit from adoption of innovative strategies & theme. However, there can be no ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05759811401367,
+        "top": 506.7337646484375,
+        "end_left": 567.7576293945312,
+        "end_top": 515.9017333984375
+      },
+      {
+        "parent_block_number": 36,
+        "original_text": "assurance that the investment objective of the Scheme will be realized.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05759811401367,
+        "top": 516.7337646484375,
+        "end_left": 305.2803039550781,
+        "end_top": 525.9017333984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "\u2022 Fund Manager",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05759811401367,
+        "top": 532.7298583984375,
+        "end_left": 512.6358032226562,
+        "end_top": 542.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "&",
+        "font_size": 4.664000034332275,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "superscript sans proportional",
+        "left": 40.05759811401367,
+        "top": 532.7298583984375,
+        "end_left": 512.6358032226562,
+        "end_top": 542.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": ": Mr. Prasad Padala     \u2022 Category: Thematic     \u2022 Minimum Application^: ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05759811401367,
+        "top": 532.7298583984375,
+        "end_left": 512.6358032226562,
+        "end_top": 542.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "`",
+        "font_size": 8.0,
+        "font_family": "RupeeForadian",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05759811401367,
+        "top": 532.7298583984375,
+        "end_left": 512.6358032226562,
+        "end_top": 542.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "5000/- & in multiples of ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05759811401367,
+        "top": 532.7298583984375,
+        "end_left": 512.6358032226562,
+        "end_top": 542.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "`",
+        "font_size": 8.0,
+        "font_family": "RupeeForadian",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05759811401367,
+        "top": 532.7298583984375,
+        "end_left": 512.6358032226562,
+        "end_top": 542.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "1 thereafter",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05759811401367,
+        "top": 532.7298583984375,
+        "end_left": 512.6358032226562,
+        "end_top": 542.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "\u2022 First Tier Banchmark Index: NIFTY 500 TRI     \u2022 Minimum Monthly SIP*: ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05963134765625,
+        "top": 544.7298583984375,
+        "end_left": 412.036865234375,
+        "end_top": 554.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "`",
+        "font_size": 8.0,
+        "font_family": "RupeeForadian",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05963134765625,
+        "top": 544.7298583984375,
+        "end_left": 412.036865234375,
+        "end_top": 554.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "500/- & in multiples of ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05963134765625,
+        "top": 544.7298583984375,
+        "end_left": 412.036865234375,
+        "end_top": 554.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "`",
+        "font_size": 8.0,
+        "font_family": "RupeeForadian",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05963134765625,
+        "top": 544.7298583984375,
+        "end_left": 412.036865234375,
+        "end_top": 554.0423583984375
+      },
+      {
+        "parent_block_number": 37,
+        "original_text": "1",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05963134765625,
+        "top": 544.7298583984375,
+        "end_left": 412.036865234375,
+        "end_top": 554.0423583984375
+      },
+      {
+        "parent_block_number": 38,
+        "original_text": "Exit Load:",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 40.05963134765625,
+        "top": 560.7337646484375,
+        "end_left": 80.53169250488281,
+        "end_top": 569.9017333984375
+      },
+      {
+        "parent_block_number": 38,
+        "original_text": "\u2022 For Ongoing basis: 1% of the applicable NAV - If units purchased or switched in from another scheme of the fund are redeemed or switched  ",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05963134765625,
+        "top": 570.7337646484375,
+        "end_left": 570.1774291992188,
+        "end_top": 579.9017333984375
+      },
+      {
+        "parent_block_number": 38,
+        "original_text": "  out on or before 1 year from the date of allotment.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05963134765625,
+        "top": 580.7337646484375,
+        "end_left": 231.00221252441406,
+        "end_top": 589.9017333984375
+      },
+      {
+        "parent_block_number": 38,
+        "original_text": "\u2022 NIL - If units purchased or switched in from another scheme of the fund are redeemed or switched out after 1 year from the date of allotment.",
+        "font_size": 8.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 40.05963134765625,
+        "top": 590.7337646484375,
+        "end_left": 571.0510864257812,
+        "end_top": 599.9017333984375
+      },
+      {
+        "parent_block_number": 39,
+        "original_text": "ABOUT SBI INNOVATIVE OPPORTUNITIES FUND",
+        "font_size": 8.0,
+        "font_family": "Helvetica-Bold",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional bold",
+        "left": 40.6786994934082,
+        "top": 461.9271545410156,
+        "end_left": 235.40798950195312,
+        "end_top": 471.0951232910156
+      },
+      {
+        "parent_block_number": 40,
+        "original_text": "For details, please refer to the Scheme Information Document (SID). ",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 38.11520004272461,
+        "top": 606.6693115234375,
+        "end_left": 573.8782958984375,
+        "end_top": 614.6912841796875
+      },
+      {
+        "parent_block_number": 40,
+        "original_text": "&",
+        "font_size": 4.080999851226807,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "superscript sans proportional",
+        "left": 38.11520004272461,
+        "top": 606.6693115234375,
+        "end_left": 573.8782958984375,
+        "end_top": 614.6912841796875
+      },
+      {
+        "parent_block_number": 40,
+        "original_text": "Mr. Pradeep Kesavan is the dedicated fund manager for overseas securities. ^Additional ",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 38.11520004272461,
+        "top": 606.6693115234375,
+        "end_left": 573.8782958984375,
+        "end_top": 614.6912841796875
+      },
+      {
+        "parent_block_number": 40,
+        "original_text": "Purchase: Rs. 1000 and in multiples of Re.1 thereafter. *For detailed minimum amount of SIP across frequencies & number of installments, please refer to SID/KIM. ",
+        "font_size": 7.0,
+        "font_family": "Helvetica",
+        "font_color": 2236192,
+        "font_color_hex": "#221F20",
+        "font_style": "sans proportional",
+        "left": 38.1138916015625,
+        "top": 615.6712646484375,
+        "end_left": 575.1661987304688,
+        "end_top": 623.6932373046875
       }
     ],
     "blocks": [
       {
-        "number": "0",
+        "number": 0,
         "text": "WHO CAN INVEST IN SBI INNOVATIVE OPPORTUNITIES FUND?",
         "boundingBox": "39.6416015625,342.9818420410156,293.86431884765625,352.1498107910156"
       },
       {
-        "number": "1",
+        "number": 1,
         "text": "Investors looking for a fund that consistently seeks out investment opportunities in upcoming trends and disruptive business ideas will \nfind this fund true to label.",
         "boundingBox": "68.05760192871094,369.5498352050781,574.6490478515625,388.31781005859375"
       },
       {
-        "number": "2",
+        "number": 2,
         "text": "Investors seeking capital appreciation through investments in forward-looking business ideas and a growth-oriented long-term portfolio \nwill find this fund appealing.",
         "boundingBox": "68.05760192871094,393.14984130859375,574.6329956054688,411.9178161621094"
       },
       {
-        "number": "3",
+        "number": 3,
         "text": "Investors seeking diversification through portfolio allocation across sectors and market caps, offering a unique avenue to tap into \nemerging trends and markets.",
         "boundingBox": "68.05760192871094,416.7498474121094,574.6450805664062,435.517822265625"
       },
       {
-        "number": "4",
+        "number": 4,
         "text": "1",
         "boundingBox": "49.07229995727539,374.8321228027344,53.954593658447266,384.8924560546875"
       },
       {
-        "number": "5",
+        "number": 5,
         "text": "2",
         "boundingBox": "49.07229995727539,398.3702392578125,53.954593658447266,408.4305725097656"
       },
       {
-        "number": "6",
+        "number": 6,
         "text": "3",
         "boundingBox": "49.07229995727539,422.3692321777344,53.954593658447266,432.4295654296875"
       },
       {
-        "number": "7",
+        "number": 7,
         "text": "INVESTMENT STRATEGY",
         "boundingBox": "39.6416015625,53.89581298828125,140.5855255126953,63.06378173828125"
       },
       {
-        "number": "8",
+        "number": 8,
         "text": "Product / Service Innovators : Companies that develop new products or services or significantly invest in R&D for new innovations. \nThey challenge existing markets or create entirely new categories.",
         "boundingBox": "73.39360046386719,78.6077880859375,565.920166015625,97.375732421875"
       },
       {
-        "number": "9",
+        "number": 9,
         "text": "Process Innovators : Companies that innovate new processes, potentially disrupting existing business models and gaining market \nshare through technological and process advancements.",
         "boundingBox": "73.39360046386719,107.40777587890625,559.9682006835938,126.17572021484375"
       },
       {
-        "number": "10",
+        "number": 10,
         "text": "Innovation Adaptors : Incumbent companies that adapt to innovative business models, products, or services within their industry, \nshowing agility in response to emergent trends. These adaptive innovators may not necessarily overhaul their entire business model \nbut exhibit innovative strategies in specific segments or verticals that has potential to meaningfully impact the business.",
         "boundingBox": "73.39360046386719,136.207763671875,563.2802124023438,164.57568359375"
       },
       {
-        "number": "11",
+        "number": 11,
         "text": "Each category presents opportunities and risks, which will guide investment decisions. For detailed investment strategy please refer Scheme Information Document carefully.",
         "boundingBox": "36.35449981689453,172.8157958984375,572.1123657226562,180.8377685546875"
       },
       {
-        "number": "12",
+        "number": 12,
         "text": "1",
         "boundingBox": "49.30080032348633,83.57987976074219,54.627906799316406,94.55680847167969"
       },
       {
-        "number": "13",
+        "number": 13,
         "text": "2",
         "boundingBox": "49.30080032348633,115.02622985839844,54.627906799316406,126.00315856933594"
       },
       {
-        "number": "14",
+        "number": 14,
         "text": "3",
         "boundingBox": "49.30080032348633,146.4495086669922,54.627906799316406,157.4264373779297"
       },
       {
-        "number": "15",
+        "number": 15,
         "text": "SBI INNOVATIVE OPPORTUNITIES FUND",
         "boundingBox": "197.45260620117188,7.1204833984375,397.8342590332031,18.5804443359375"
       },
       {
-        "number": "16",
+        "number": 16,
         "text": "PORTFOLIO CONSTRUCTION APPROACH",
         "boundingBox": "39.36130142211914,206.12042236328125,206.69862365722656,215.28839111328125"
       },
       {
-        "number": "17",
+        "number": 17,
         "text": "Min 80% of net assets investing into companies falling into innovation theme buckets",
         "boundingBox": "54.241302490234375,230.8323974609375,370.53753662109375,240.0003662109375"
       },
       {
-        "number": "18",
+        "number": 18,
         "text": "Upto 35% of net assets investing into global stocks aligned with the underlying theme",
         "boundingBox": "54.241302490234375,244.8323974609375,372.5227355957031,254.0003662109375"
       },
       {
-        "number": "19",
+        "number": 19,
         "text": "True to its label diversified portfolio investing across sectors & Market cap",
         "boundingBox": "54.241302490234375,258.8323974609375,329.9786071777344,268.0003662109375"
       },
       {
-        "number": "20",
+        "number": 20,
         "text": "Aims to have a portfolio of ~35-40 stocks with bottom-up stock selection approach",
         "boundingBox": "54.241302490234375,272.8323974609375,359.9306945800781,282.0003662109375"
       },
       {
-        "number": "21",
+        "number": 21,
         "text": "Companies with long runway for growth, competitive advantage, potential for generating strong ROE & cashflows etc",
         "boundingBox": "54.241302490234375,286.8323974609375,489.265869140625,296.0003662109375"
       },
       {
-        "number": "22",
+        "number": 22,
         "text": "Further, to achieve diversification the Scheme may also invest residual net assets i.e. up to 20% of the net assets in companies other than the companies following innovation theme. \nThis is based on the prevailing market conditions & current views and is subject to change within the limits of the SID basis the fund manager's view.",
         "boundingBox": "36.35449981689453,305.4852294921875,574.0460205078125,321.4432373046875"
       },
       {
-        "number": "28",
+        "number": 28,
         "text": "Investors understand that their principal \nwill be at very high risk",
         "boundingBox": "163.16600036621094,698.7822875976562,241.0760040283203,707.5980834960938"
       },
       {
-        "number": "29",
+        "number": 29,
         "text": "\u2022 Long term Capital appreciation",
         "boundingBox": "254.00100708007812,663.2131958007812,346.4540100097656,670.2131958007812"
       },
       {
-        "number": "30",
+        "number": 30,
         "text": "\u2022 Investment in equity and equity related instruments of companies engaged in\n   and/or expected to bene\ufb01t from adoption of innovative strategies & theme.",
         "boundingBox": "254.00100708007812,674.9522094726562,478.97283935546875,688.9522094726562"
       },
       {
-        "number": "31",
+        "number": 31,
         "text": "This product is suitable for investors who are seeking^:",
         "boundingBox": "254.970703125,643.2740478515625,449.1496276855469,651.3062744140625"
       },
       {
-        "number": "32",
+        "number": 32,
         "text": "^Investors should consult their \ufb01nancial advisers if in doubt about whether the product is suitable for them.",
         "boundingBox": "254.87010192871094,699.68359375,476.2846374511719,707.12451171875"
       },
       {
-        "number": "33",
+        "number": 33,
         "text": "The benchmark riskometer\nis at Very High risk",
         "boundingBox": "509.1767883300781,698.7736206054688,560.0617065429688,707.5894165039062"
       },
       {
-        "number": "34",
+        "number": 34,
         "text": "Benchmark Riskometer:\nBenchmark Riskometer - Nifty 500 TRI",
         "boundingBox": "498.3245544433594,641.977783203125,569.9730834960938,650.7936401367188"
       },
       {
-        "number": "35",
+        "number": 35,
         "text": "This leaflet is for information purposes only and is not an offer to sell or a solicitation to buy any mutual fund units/securities. The views expressed herein are based on the \nbasis of internal data, publicly available information & other sources believed to be reliable. Any calculations made are approximations meant as guidelines only, which need \nto be confirmed before relying on them.  These views alone are not sufficient and should not be used for the development or implementation of an investment strategy. It \nshould not be construed as investment advice to any party. All opinions and estimates included here constitute our view as of this date and are subject to change without \nnotice. Neither SBI Funds Management Limited, SBI Mutual Fund nor any person connected with it, accepts any liability arising from the use of this information. The recipient \nof this material should rely on their investigations and take their own professional advice.",
         "boundingBox": "18.781299591064453,727.9417724609375,580.4494018554688,780.9737548828125"
       },
       {
-        "number": "36",
+        "number": 36,
         "text": "Investment Objective:\nThe investment objective of the scheme is to provide investors with opportunities for long term capital appreciation by investing in equity and \nequity related instruments of companies that seeks to benefit from adoption of innovative strategies & theme. However, there can be no \nassurance that the investment objective of the Scheme will be realized.",
         "boundingBox": "40.05759811401367,486.7337341308594,567.7576293945312,525.9017333984375"
       },
       {
-        "number": "37",
+        "number": 37,
         "text": "\u2022 Fund Manager&: Mr. Prasad Padala     \u2022 Category: Thematic     \u2022 Minimum Application^: `5000/- & in multiples of `1 thereafter\n\u2022 First Tier Banchmark Index: NIFTY 500 TRI     \u2022 Minimum Monthly SIP*: `500/- & in multiples of `1",
         "boundingBox": "40.05759811401367,532.7298583984375,512.6358032226562,554.0423583984375"
       },
       {
-        "number": "38",
+        "number": 38,
         "text": "Exit Load:\n\u2022 For Ongoing basis: 1% of the applicable NAV - If units purchased or switched in from another scheme of the fund are redeemed or switched  \n  out on or before 1 year from the date of allotment.\n\u2022 NIL - If units purchased or switched in from another scheme of the fund are redeemed or switched out after 1 year from the date of allotment.",
         "boundingBox": "40.05963134765625,560.7337646484375,571.0510864257812,599.9017333984375"
       },
       {
-        "number": "39",
+        "number": 39,
         "text": "ABOUT SBI INNOVATIVE OPPORTUNITIES FUND",
         "boundingBox": "40.6786994934082,461.9271545410156,235.40798950195312,471.0951232910156"
       },
       {
-        "number": "40",
+        "number": 40,
         "text": "For details, please refer to the Scheme Information Document (SID). &Mr. Pradeep Kesavan is the dedicated fund manager for overseas securities. ^Additional \nPurchase: Rs. 1000 and in multiples of Re.1 thereafter. *For detailed minimum amount of SIP across frequencies & number of installments, please refer to SID/KIM. ",
         "boundingBox": "38.1138916015625,606.6693115234375,575.1661987304688,623.6932373046875"
       }
     ],
-    "imagesModelsList": [
+    "images_models_list": [
       {
-        "imageXPos": "41.0",
-        "imageYPos": "232.0",
-        "imageWidth": "7",
-        "imageHeight": "6"
+        "left": 41.0,
+        "top": 232.0,
+        "end_left": 48.0,
+        "end_top": 238.0,
+        "image_width": 7,
+        "image_height": 6
       },
       {
-        "imageXPos": "41.0",
-        "imageYPos": "246.0",
-        "imageWidth": "7",
-        "imageHeight": "7"
+        "left": 41.0,
+        "top": 246.0,
+        "end_left": 48.0,
+        "end_top": 253.0,
+        "image_width": 7,
+        "image_height": 7
       },
       {
-        "imageXPos": "41.0",
-        "imageYPos": "260.0",
-        "imageWidth": "7",
-        "imageHeight": "6"
+        "left": 41.0,
+        "top": 260.0,
+        "end_left": 48.0,
+        "end_top": 266.0,
+        "image_width": 7,
+        "image_height": 6
       },
       {
-        "imageXPos": "41.0",
-        "imageYPos": "274.0",
-        "imageWidth": "7",
-        "imageHeight": "7"
+        "left": 41.0,
+        "top": 274.0,
+        "end_left": 48.0,
+        "end_top": 281.0,
+        "image_width": 7,
+        "image_height": 7
       },
       {
-        "imageXPos": "41.0",
-        "imageYPos": "288.0",
-        "imageWidth": "7",
-        "imageHeight": "6"
+        "left": 41.0,
+        "top": 288.0,
+        "end_left": 48.0,
+        "end_top": 294.0,
+        "image_width": 7,
+        "image_height": 6
       },
       {
-        "imageXPos": "0.0",
-        "imageYPos": "584.0",
-        "imageWidth": "596",
-        "imageHeight": "46"
+        "left": 0.0,
+        "top": 584.0,
+        "end_left": 596.0,
+        "end_top": 630.0,
+        "image_width": 596,
+        "image_height": 46
       },
       {
-        "imageXPos": "0.0",
-        "imageYPos": "584.0",
-        "imageWidth": "596",
-        "imageHeight": "46"
+        "left": 0.0,
+        "top": 584.0,
+        "end_left": 596.0,
+        "end_top": 630.0,
+        "image_width": 596,
+        "image_height": 46
       }
     ]
   }

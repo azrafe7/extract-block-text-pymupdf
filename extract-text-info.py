@@ -21,6 +21,25 @@ def get_texts_in_lines(lines, as_spans=False):
         texts.append([span if as_spans else span['text'] for span in line['spans']])
     return texts
 
+def flags_decomposer(flags):
+    """Make font flags human readable."""
+    l = []
+    if flags & 2 ** 0:
+        l.append("superscript")
+    if flags & 2 ** 1:
+        l.append("italic")
+    if flags & 2 ** 2:
+        l.append("serifed")
+    else:
+        l.append("sans")
+    if flags & 2 ** 3:
+        l.append("monospaced")
+    else:
+        l.append("proportional")
+    if flags & 2 ** 4:
+        l.append("bold")
+    return " ".join(l)
+
 def highlight_sentences_in_pdf(input_pdf_path, output_pdf_path):
 
     # Open the PDF file
@@ -39,12 +58,12 @@ def highlight_sentences_in_pdf(input_pdf_path, output_pdf_path):
         image_models = []
         block_models = []
         page_data = { 
-            "pageNumber": str(page_number + 1),
-            "pageWidth": str(page.rect[2] - page.rect[0]),
-            "pageHight": str(page.rect[3] - page.rect[1]),
-            "textsModelsList": text_models,
+            "page_number": page_number + 1,
+            "page_width": page.rect[2] - page.rect[0],
+            "page_height": page.rect[3] - page.rect[1],
+            "texts_models_list": text_models,
             "blocks": block_models,
-            "imagesModelsList": image_models,
+            "images_models_list": image_models,
         }
 
         # breakpoint()
@@ -74,10 +93,12 @@ def highlight_sentences_in_pdf(input_pdf_path, output_pdf_path):
             bbox = list(image_info['bbox'])
 
             image_model = {
-                "imageXPos": str(bbox[0]),
-                "imageYPos": str(bbox[1]),
-                "imageWidth": str(image_info['width']),
-                "imageHeight": str(image_info['height']),
+                "left": bbox[0],
+                "top": bbox[1],
+                "end_left": bbox[2],
+                "end_top": bbox[3],
+                "image_width": image_info['width'],
+                "image_height": image_info['height'],
             }
             image_models.append(image_model)
             
@@ -118,13 +139,17 @@ def highlight_sentences_in_pdf(input_pdf_path, output_pdf_path):
                     for span in spans:
                         # breakpoint()
                         text_model = {
-                            "parentBlockNumber": str(block_index),
-                            "textBoxName": str(span['text']),
-                            "textXPos": str(span['bbox'][0]),
-                            "textYPos": str(span['bbox'][1]),
-                            "textBoundingBox": ",".join([str(value) for value in span['bbox']]),
-                            "fontSize": span['size'],
-                            "fontFamily": span['font']
+                            "parent_block_number": block_index,
+                            "original_text": span['text'],
+                            "font_size": span['size'],
+                            "font_family": span['font'],
+                            "font_color": span['color'],
+                            "font_color_hex": "#" + '{0:06X}'.format(span['color']),
+                            "font_style": flags_decomposer(span['flags']),
+                            "left": bbox[0],
+                            "top": bbox[1],
+                            "end_left": bbox[2],
+                            "end_top": bbox[3],
                         }
                         text_models.append(text_model)
                     
@@ -133,7 +158,7 @@ def highlight_sentences_in_pdf(input_pdf_path, output_pdf_path):
                 block_text = "\n".join(block_texts)
 
                 block_model = {
-                    "number": str(block_index),
+                    "number": block_index,
                     "text": block_text,
                     "boundingBox": ",".join([str(value) for value in block['bbox']])
                 }
