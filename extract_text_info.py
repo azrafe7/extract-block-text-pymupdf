@@ -10,7 +10,7 @@ import PIL
 HIGHLIGHTED_SUFFIX = '_highlighted'
 
 # get_text params
-DEFAULT_FLAGS = 0
+DEFAULT_FLAGS = None  # 0
 DEFAULT_SORT = True
 
 # clustered blocks params
