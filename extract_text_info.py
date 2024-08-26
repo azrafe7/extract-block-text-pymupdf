@@ -1,4 +1,5 @@
 import fitz  # PyMuPDF
+import pathlib
 import argparse
 import os
 import re
@@ -149,10 +150,9 @@ def flags_decomposer(flags):
         l.append("bold")
     return " ".join(l)
 
-def highlight_sentences_in_pdf(input_pdf_path, output_pdf_path, use_clustered_blocks=DEFAULT_USE_CLUSTERED_BLOCKS, x_tolerance=DEFAULT_X_TOLERANCE, y_tolerance=DEFAULT_Y_TOLERANCE):
 
-    # Open the PDF file
-    pdf_document = fitz.open(input_pdf_path)
+
+def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CLUSTERED_BLOCKS, x_tolerance=DEFAULT_X_TOLERANCE, y_tolerance=DEFAULT_Y_TOLERANCE):
 
     # Regular expression to split text into sentences
     sentence_endings = re.compile(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s')
@@ -320,10 +320,7 @@ def highlight_sentences_in_pdf(input_pdf_path, output_pdf_path, use_clustered_bl
         pdf_data.append(page_data)
         
         
-    # Save the modified PDF to a new file
-    pdf_document.save(output_pdf_path)
-    pdf_document.close()
-    return pdf_data
+    return pdf_data, pdf_document
 
 def main():
     # Parse command-line arguments
@@ -339,7 +336,13 @@ def main():
     output_json = os.path.splitext(output_pdf)[0] + ".json"
 
     # Highlight the sentences in the PDF
-    json_data = highlight_sentences_in_pdf(input_pdf, output_pdf)
+    pdf_document = fitz.open(input_pdf)
+    json_data, result_pdf_document = highlight_sentences_in_pdf(pdf_document)
+
+    # Save the modified PDF to a new file
+    result_pdf_document.save(output_pdf)
+    result_pdf_document.close()
+
     print()
     print(f"use_clustered_blocks: {json_data[-1]['use_clustered_blocks']}")
     print(f"Highlighted PDF saved as: {output_pdf}")
