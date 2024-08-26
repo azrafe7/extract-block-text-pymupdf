@@ -6,11 +6,13 @@ from io import BytesIO
 # from pypdf import PdfReader, PdfWriter, generic, ObjectDeletionFlag
 # import pypdfium2 as pdfium
 import fitz  # PyMuPDF
+import extract_text_info
 from extract_text_info import highlight_sentences_in_pdf
 from PIL import Image
 import os
 import logging
 from typing import Optional, cast
+import json
 
 logger = logging.getLogger('uvicorn.error')
 logger.setLevel(logging.DEBUG)
@@ -19,15 +21,18 @@ app = FastAPI()
 
 
 OUTPUT_MEDIA_TYPES = {
-    0: 'application/pdf',
-    1: 'image/png',
-    2: 'image/jpeg',
+    0: 'application/json',
+    1: 'application/pdf',
 }
 
-DEFAULT_X_TOLERANCE = None
-DEFAULT_Y_TOLERANCE = None
+DEFAULT_OUTPUT_TYPE = 0
 
-HIGHLIGHTED_SUFFIX = '_highlighted'
+HIGHLIGHTED_SUFFIX = extract_text_info.HIGHLIGHTED_SUFFIX
+
+# clustered blocks params
+DEFAULT_USE_CLUSTERED_BLOCKS = extract_text_info.DEFAULT_USE_CLUSTERED_BLOCKS
+DEFAULT_X_TOLERANCE = extract_text_info.DEFAULT_X_TOLERANCE
+DEFAULT_Y_TOLERANCE = extract_text_info.DEFAULT_Y_TOLERANCE
 
 
 class ProcessRequest(BaseModel):
@@ -35,6 +40,7 @@ class ProcessRequest(BaseModel):
     use_clustered_blocks: Optional[bool] = False
     x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE
     y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE
+    output_type: Optional[int] = DEFAULT_OUTPUT_TYPE
 
 
 @app.get("/")
@@ -45,12 +51,13 @@ async def root():
 async def test_page():
     return FileResponse('test.html')
 
-def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = False, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE):
+def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     logger.debug(f"Processing '{file_url}'")
     logger.debug(f"Use clustered blocks: {use_clustered_blocks}")
     if use_clustered_blocks:
         logger.debug(f"  x_tolerance: {x_tolerance}")
         logger.debug(f"  y_tolerance: {y_tolerance}")
+    logger.debug(f"Output type: '{OUTPUT_MEDIA_TYPES[output_type]}'")
     
     # Check if the input file has a .pdf extension
     file_url = str(file_url) # force-convert to str
@@ -65,7 +72,7 @@ def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = False, x_t
     # Create a Pdf Document object from the fetched content
     pdf_document = fitz.Document(stream=BytesIO(pdf_content))
     
-    json_data, result_pdf_document = highlight_sentences_in_pdf(pdf_document)
+    json_data, result_pdf_document = highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=use_clustered_blocks, x_tolerance=x_tolerance, y_tolerance=y_tolerance)
 
     # Generate the output filename
     input_filename = os.path.basename(file_url)
@@ -80,27 +87,32 @@ async def extract_text_post(request: ProcessRequest):
     return process_request(request.file_url, request.use_clustered_blocks, request.x_tolerance, request.y_tolerance)
 
 @app.get("/extract_text")
-async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] = False, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE):
+async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     if file_url is None:
         raise HTTPException(status_code=400, detail="Missing 'file_url' parameter in the query string.")
-    return process_request(file_url, use_clustered_blocks, x_tolerance, y_tolerance)
+    return process_request(file_url, use_clustered_blocks, x_tolerance, y_tolerance, output_type)
 
-def process_request(file_url: str, use_clustered_blocks: Optional[bool] = False, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE):
+def process_request(file_url: str, use_clustered_blocks: Optional[bool] = False, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     try:
-        output_pdf, output_json, input_filename = process_pdf(file_url, use_clustered_blocks=use_clustered_blocks, x_tolerance=x_tolerance, y_tolerance=y_tolerance)
+        output_pdf, output_json, input_filename = process_pdf(file_url, use_clustered_blocks=use_clustered_blocks, x_tolerance=x_tolerance, y_tolerance=y_tolerance, output_type=output_type)
+
+        output_json = json.dumps(
+            output_json, 
+            # indent=2
+        )
 
         # Return the PDF as a downloadable file along with the response message
-        media_type = OUTPUT_MEDIA_TYPES[0]
-        # breakpoint()
-        output_filename = os.path.splitext(input_filename)[0] + f"{HIGHLIGHTED_SUFFIX}.pdf"
+        media_type = OUTPUT_MEDIA_TYPES[output_type]
+        # output_filename = os.path.splitext(input_filename)[0] + f"{HIGHLIGHTED_SUFFIX}.pdf"
         headers = {
             # "Content-Disposition": f"attachment; filename={output_filename}",
             "Content-Type": media_type,
         }
 
         # Prepare the response message
+        # breakpoint()
         response_data = Response(
-            content=output_pdf.write(),
+            content=output_pdf.write() if 'pdf' in media_type else output_json,
             media_type=media_type,
             headers=headers,
         )

@@ -154,9 +154,6 @@ def flags_decomposer(flags):
 
 def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CLUSTERED_BLOCKS, x_tolerance=DEFAULT_X_TOLERANCE, y_tolerance=DEFAULT_Y_TOLERANCE):
 
-    # Regular expression to split text into sentences
-    sentence_endings = re.compile(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s')
-
     pdf_data = []
     
     # Iterate through each page in the PDF
@@ -266,7 +263,7 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                 for line_index, line in enumerate(lines):
                     spans = [span for span in line['spans'] if span['text']]
                     text = ''.join([span['text'] for span in spans])
-                    print(f"[page {page_number}] spans text in block {block_index} line {line_index}: '{text}'")
+                    # print(f"[page {page_number}] spans text in block {block_index} line {line_index}: '{text}'")
                     bbox = line['bbox']
                     
                     #highlight = page.add_rect_annot(bbox)
