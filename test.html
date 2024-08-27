@@ -76,6 +76,11 @@
     let sendEl = document.querySelector('#send');
     let logEl = document.querySelector('#log');
     
+	function logText(text) {
+		logEl.textContent += text;
+		logEl.scrollTop = logEl.scrollHeight;
+	}
+	
     ['', true, false].forEach((opt) => ucbEl.options.add(new Option(opt)));
 	['', 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => xToleranceEl.options.add(new Option(opt)));
 	['', 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => yToleranceEl.options.add(new Option(opt)));
@@ -91,7 +96,7 @@
       xToleranceEl.value = 0;
       yToleranceEl.value = 3;
       outputTypeEl.selectedIndex = 1;
-      logEl.textContent += "Reset params!\n";
+      logText("Reset params!\n");
     });
     
     sendEl.addEventListener('click', (evt) => {
@@ -112,9 +117,9 @@
 	  if (outputTypeEl.value != '') payload.output_type = parseInt(outputTypeEl.value);
       
       console.log('Sending payload: ', payload);
-      logEl.textContent += `Sending request to ${endpoint}\n`;
-      logEl.textContent += `Payload:\n${JSON.stringify(payload, null, 2)}\n`;
-      logEl.textContent += `Please wait...\n`;
+      logText(`Sending request to ${endpoint}\n`);
+      logText(`Payload:\n${JSON.stringify(payload, null, 2)}\n`);
+      logText(`Please wait...\n`);
       
       const headers = new Headers({
         "Content-Type": "application/json"
@@ -137,12 +142,12 @@
 			// popup blocked
 			let message = "Could not open a new popup window! Please add this site to your exception list.";
 			alert(message);
-			logEl.textContent += message + '\n';
+			logText(message + '\n');
 		}
       })
       .catch(error => {
         console.error(error);
-        logEl.textContent += `ERROR: ${error}\n`;
+        logText(`ERROR: ${error}\n`);
       });
     });
     
