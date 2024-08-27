@@ -85,7 +85,7 @@ def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_US
 async def extract_text_post(request: ProcessRequest):
     if not request:
         raise HTTPException(status_code=400, detail="Missing JSON payload. Please provide 'file_url' in the request body.")
-    return process_request(request.file_url, request.use_clustered_blocks, request.x_tolerance, request.y_tolerance)
+    return process_request(request.file_url, request.use_clustered_blocks, request.x_tolerance, request.y_tolerance, request.output_type)
 
 @app.get("/extract_text")
 async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
@@ -93,7 +93,7 @@ async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] =
         raise HTTPException(status_code=400, detail="Missing 'file_url' parameter in the query string.")
     return process_request(file_url, use_clustered_blocks, x_tolerance, y_tolerance, output_type)
 
-def process_request(file_url: str, use_clustered_blocks: Optional[bool] = False, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
+def process_request(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     try:
         output_pdf, output_data, input_filename = process_pdf(file_url, use_clustered_blocks=use_clustered_blocks, x_tolerance=x_tolerance, y_tolerance=y_tolerance, output_type=output_type)
 

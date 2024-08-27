@@ -1,0 +1,145 @@
+<html>
+  <style>
+    body, * {
+      font-family: monospace;
+    }
+    
+    input[type="text"], textarea {
+      min-width: 700px;
+    }
+    
+    input[type="button"] {
+      cursor: pointer;
+    }
+    
+    form div {
+      padding: 3px;
+    }
+    
+    #log-div {
+      margin-top: 6px;
+    }
+    
+    form label {
+      display: inline-block;
+      min-width: 70px;
+      font-weight: bold;
+      vertical-align: top;
+    }
+    
+    form select {
+      min-width: 50px;
+    }
+  </style>
+<body>
+  <h2>Test</h2>
+  <form>
+    <div>
+      <label for="file_url">file_url:</label>
+      <input id="file_url" placeholder="e.g.: https://s3-ap-southeast-1.amazonaws.com/converter-effy/AITranslate_1_1722065038.pdf" type="text"></input>
+    </div>
+    <div>
+      <label for="use_clustered_blocks">use_clustered_blocks</label>
+      <select id="use_clustered_blocks"></select>
+    </div>
+    <div>
+      <label for="x_tolerance">x_tolerance</label>
+      <select id="x_tolerance"></select>
+    </div>
+    <div>
+      <label for="y_tolerance">y_tolerance</label>
+      <select id="y_tolerance"></select>
+    </div>
+    <div>
+      <label for="output_type">output_type:</label>
+      <select id="output_type"></select>
+    </div>
+    <div>
+      <input id="reset" type="button" value="Reset"></input>
+      <input id="send" type="button" value="Send"></input>
+    </div>
+    <div id="log-div">
+      <label for="log">Log:</label>
+      <textarea id="log" rows=20></textarea>
+    </div>
+  </form>
+  
+  <script>
+    const DEFAULT_PDF = "https://s3-ap-southeast-1.amazonaws.com/converter-effy/AITranslate_1_1722065038.pdf";
+    
+    let fileUrlEl = document.querySelector('#file_url');
+    let ucbEl = document.querySelector('#use_clustered_blocks');
+    let xToleranceEl = document.querySelector('#x_tolerance');
+    let yToleranceEl = document.querySelector('#y_tolerance');
+    let outputTypeEl = document.querySelector('#output_type');
+    let resetEl = document.querySelector('#reset');
+    let sendEl = document.querySelector('#send');
+    let logEl = document.querySelector('#log');
+    
+    ['', true, false].forEach((opt) => ucbEl.options.add(new Option(opt)));
+	['', 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => xToleranceEl.options.add(new Option(opt)));
+	['', 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => yToleranceEl.options.add(new Option(opt)));
+    [['', ''], [0, '0 - json'], [1, '1 - pdf'], [2, '2 - html']].forEach((opt) => outputTypeEl.options.add(new Option(opt[1], opt[0])));
+	ucbEl.addEventListener('change', (evt) => {
+		xToleranceEl.disabled = ucbEl.value == 'false' || ucbEl.value == '';
+		yToleranceEl.disabled = ucbEl.value == 'false' || ucbEl.value == '';
+	});
+
+    resetEl.addEventListener('click', (evt) => {
+      fileUrlEl.value = DEFAULT_PDF;
+      ucbEl.value = true;
+      xToleranceEl.value = 0;
+      yToleranceEl.value = 3;
+      outputTypeEl.selectedIndex = 1;
+      logEl.textContent += "Reset params!\n";
+    });
+    
+    sendEl.addEventListener('click', (evt) => {
+      let location = window.location.href;
+      let locationParts = location.split('/');
+      locationParts.pop();
+      let endpoint = locationParts.join('/') + "/extract_text";
+      
+      payload = {
+        file_url: fileUrlEl.value,
+      };
+      let ucb = ucbEl.value?.toLowerCase?.() === 'true';
+	  if (ucb) payload.use_clustered_blocks = ucb;
+      if (ucb) {
+		payload.x_tolerance = parseInt(xToleranceEl.value);
+		payload.y_tolerance = parseInt(yToleranceEl.value);
+	  }
+	  if (outputTypeEl.value != '') payload.output_type = parseInt(outputTypeEl.value);
+      
+      console.log('Sending payload: ', payload);
+      logEl.textContent += `Sending request to ${endpoint}\n`;
+      logEl.textContent += `Payload:\n${JSON.stringify(payload, null, 2)}\n`;
+      logEl.textContent += `Please wait...\n`;
+      
+      const headers = new Headers({
+        "Content-Type": "application/json"
+      });
+
+      fetch(endpoint,
+      {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(payload)
+      })
+      .then(res => { return res.blob(); })
+      .then(blob => { 
+        console.log(blob);
+        let blobURL = URL.createObjectURL(blob);
+        
+        window.open(blobURL, '_blank');
+      })
+      .catch(error => {
+        console.error(error);
+        logEl.textContent += `ERROR: ${error}\n`;
+      });
+    });
+    
+    resetEl.click();
+  </script>
+</body>
+</html>
