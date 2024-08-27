@@ -132,6 +132,13 @@
         let blobURL = URL.createObjectURL(blob);
         
         window.open(blobURL, '_blank');
+		let newWin = window.open(url);             
+
+		if (!newWin || newWin.closed || newWin.closed == 'undefined') 
+		{ 
+			// popup blocked
+			alert("Could not open a new popup window! Please add this site to your exception list.");
+		}
       })
       .catch(error => {
         console.error(error);
