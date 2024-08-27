@@ -23,6 +23,7 @@ app = FastAPI()
 OUTPUT_MEDIA_TYPES = {
     0: 'application/json',
     1: 'application/pdf',
+    2: '',
 }
 
 DEFAULT_OUTPUT_TYPE = 0
@@ -94,13 +95,32 @@ async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] =
 
 def process_request(file_url: str, use_clustered_blocks: Optional[bool] = False, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     try:
-        output_pdf, output_json, input_filename = process_pdf(file_url, use_clustered_blocks=use_clustered_blocks, x_tolerance=x_tolerance, y_tolerance=y_tolerance, output_type=output_type)
+        output_pdf, output_data, input_filename = process_pdf(file_url, use_clustered_blocks=use_clustered_blocks, x_tolerance=x_tolerance, y_tolerance=y_tolerance, output_type=output_type)
 
-        output_json = json.dumps(
-            output_json, 
-            # indent=2
-        )
+        if output_type == 0:
+            output_data = json.dumps(
+                output_data, 
+                # indent=2
+            )
+        elif output_type == 2:  # text only
+            page_blocks = []
+            for page_idx, page in enumerate(output_data):
+                text_blocks = []
+                page_block = {"page": page_idx + 1, "texts": text_blocks}
+                for block in page["blocks"]:
+                    text_blocks.append(block["text"])
+                page_blocks.append(page_block)
+            
+            output_data = ""
+            for page_block in page_blocks:
+                output_data += f'<html style="font-family:monospace;">'
+                output_data += f'<div style="margin-top:1em; font-size:1.2em"><b>Page {page_block["page"]}</b></div>'
+                for text_idx, text in enumerate(page_block["texts"]):
+                    output_data += f'<div style="margin-left:1em; margin-top:.75em;"><b>#{text_idx + 1}</b></div>'
+                    output_data += f'<div style="margin-left:1em; margin-top:.2em; border:1px solid #1d1">{text}</div>'
+                output_data += f'</html>'
 
+        
         # Return the PDF as a downloadable file along with the response message
         media_type = OUTPUT_MEDIA_TYPES[output_type]
         # output_filename = os.path.splitext(input_filename)[0] + f"{HIGHLIGHTED_SUFFIX}.pdf"
@@ -112,7 +132,7 @@ def process_request(file_url: str, use_clustered_blocks: Optional[bool] = False,
         # Prepare the response message
         # breakpoint()
         response_data = Response(
-            content=output_pdf.write() if 'pdf' in media_type else output_json,
+            content=output_pdf.write() if 'pdf' in media_type else output_data,
             media_type=media_type,
             headers=headers,
         )
