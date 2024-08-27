@@ -23,7 +23,7 @@ app = FastAPI()
 OUTPUT_MEDIA_TYPES = {
     0: 'application/json',
     1: 'application/pdf',
-    2: '',
+    2: 'text/html',
 }
 
 DEFAULT_OUTPUT_TYPE = 0
@@ -106,19 +106,43 @@ def process_request(file_url: str, use_clustered_blocks: Optional[bool] = False,
             page_blocks = []
             for page_idx, page in enumerate(output_data):
                 text_blocks = []
-                page_block = {"page": page_idx + 1, "texts": text_blocks}
+                page_number = page["page_number"]
+                page_block = {"page": page_number, "texts": text_blocks}
                 for block in page["blocks"]:
                     text_blocks.append(block["text"])
                 page_blocks.append(page_block)
             
-            output_data = ""
+            output_data = '''
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+    body {
+      font-family: monospace;
+    }
+    .page {
+      margin-top: 1em; 
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .text-caption {
+      margin-left: 1em; 
+      margin-top: .75em;
+      font-weight: bold;
+    }
+    .text {
+      margin-left: 1em;
+      margin-top:.2em; 
+      border:1px solid #1d1;
+    }
+    </style>
+  </head>'''
             for page_block in page_blocks:
-                output_data += f'<html style="font-family:monospace;">'
-                output_data += f'<div style="margin-top:1em; font-size:1.2em"><b>Page {page_block["page"]}</b></div>'
+                output_data += f'<div class="page">Page {page_block["page"]}</div>'
                 for text_idx, text in enumerate(page_block["texts"]):
-                    output_data += f'<div style="margin-left:1em; margin-top:.75em;"><b>#{text_idx + 1}</b></div>'
-                    output_data += f'<div style="margin-left:1em; margin-top:.2em; border:1px solid #1d1">{text}</div>'
-                output_data += f'</html>'
+                    output_data += f'<div class="text-caption">#{text_idx + 1}</div>'
+                    output_data += f'<div class="text">{text}</div>'
+            output_data += f'</html>'
 
         
         # Return the PDF as a downloadable file along with the response message
