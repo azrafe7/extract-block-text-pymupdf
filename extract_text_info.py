@@ -14,9 +14,10 @@ DEFAULT_FLAGS = None  # 0
 DEFAULT_SORT = True
 
 # clustered blocks params
-DEFAULT_USE_CLUSTERED_BLOCKS = True
-DEFAULT_X_TOLERANCE = 0
-DEFAULT_Y_TOLERANCE = 3
+DEFAULT_USE_CLUSTERED_BLOCKS = False # x:0 y:3
+DEFAULT_USE_CLUSTERED_SPANS = True # x:1 y:1
+DEFAULT_X_TOLERANCE = 1
+DEFAULT_Y_TOLERANCE = 1
 
 # Adapted from cluster_drawings()
 def cluster_blocks(
@@ -152,7 +153,7 @@ def flags_decomposer(flags):
 
 
 
-def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CLUSTERED_BLOCKS, x_tolerance=DEFAULT_X_TOLERANCE, y_tolerance=DEFAULT_Y_TOLERANCE):
+def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans=DEFAULT_USE_CLUSTERED_SPANS, x_tolerance=DEFAULT_X_TOLERANCE, y_tolerance=DEFAULT_Y_TOLERANCE):
 
     pdf_data = []
     
@@ -223,12 +224,24 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
         # Extract text with formatting information
         all_text_blocks = [block for block in page.get_text("dict", flags=DEFAULT_FLAGS, sort=DEFAULT_SORT)["blocks"] if block['type'] == 0]
                 
-        if use_clustered_blocks:
-            page_data["use_clustered_blocks"] = {
-                "x_tolerance": x_tolerance,
-                "y_tolerance": y_tolerance,
-            }
-            clustered_rects = cluster_blocks(page, blocks=all_text_blocks, x_tolerance=x_tolerance, y_tolerance=y_tolerance)
+        if use_clustered_blocks or use_clustered_spans:
+            if use_clustered_blocks:
+                page_data["use_clustered_blocks"] = {
+                    "x_tolerance": x_tolerance,
+                    "y_tolerance": y_tolerance,
+                }
+                clustered_rects = cluster_blocks(page, blocks=all_text_blocks, x_tolerance=x_tolerance, y_tolerance=y_tolerance)
+            else: # use_clustered_spans
+                page_data["use_clustered_spans"] = {
+                    "x_tolerance": x_tolerance,
+                    "y_tolerance": y_tolerance,
+                }
+                all_spans = []
+                for block in all_text_blocks:
+                    for lines in block["lines"]:
+                        all_spans.extend(lines["spans"])
+                clustered_rects = cluster_blocks(page, blocks=all_spans, x_tolerance=x_tolerance, y_tolerance=y_tolerance)
+
             blocks = []
             print(f"all_text_blocks: {len(all_text_blocks)}  clustered_rects: {len(clustered_rects)}")
             for rect in clustered_rects:
@@ -244,6 +257,7 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                     blocks.append(merged_block)
         else:
             page_data["use_clustered_blocks"] = False
+            page_data["use_clustered_spans"] = False
             blocks = all_text_blocks
         
         print(f"blocks: {len(blocks)}")
@@ -266,13 +280,13 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                     # print(f"[page {page_number}] spans text in block {block_index} line {line_index}: '{text}'")
                     bbox = line['bbox']
                     
-                    #highlight = page.add_rect_annot(bbox)
-                    #highlight.set_colors(stroke=[1, 0, 0])  # Red rectangle
-                    #highlight.update()
-                    ## Add annotation with line text
-                    #text_annot = page.add_text_annot((bbox[2]-2, bbox[3]-2), text, icon="Comment")
-                    #text_annot.set_colors(stroke=[1, 0, 0])  # Red
-                    #text_annot.update(opacity=.7)
+                    # highlight = page.add_rect_annot(bbox)
+                    # highlight.set_colors(stroke=[1, 0, 0])  # Red rectangle
+                    # highlight.update()
+                    ##Add annotation with line text
+                    # text_annot = page.add_text_annot((bbox[2]-2, bbox[3]-2), text, icon="Comment")
+                    # text_annot.set_colors(stroke=[1, 0, 0])  # Red
+                    # text_annot.update(opacity=.7)
                     
                     for span in spans:
                         # breakpoint()

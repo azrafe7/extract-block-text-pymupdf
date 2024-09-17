@@ -43,6 +43,10 @@
       <select id="use_clustered_blocks"></select>
     </div>
     <div>
+      <label for="use_clustered_spans">use_clustered_spans</label>
+      <select id="use_clustered_spans"></select>
+    </div>
+    <div>
       <label for="x_tolerance">x_tolerance</label>
       <select id="x_tolerance"></select>
     </div>
@@ -66,10 +70,12 @@
   
   <script>
     //const DEFAULT_PDF = "https://s3-ap-southeast-1.amazonaws.com/converter-effy/AITranslate_1_1722065038.pdf";
-    const DEFAULT_PDF = "https://s3-ap-southeast-1.amazonaws.com/converter-effy/AITranslate_1_1723115119.pdf";
+    //const DEFAULT_PDF = "https://s3-ap-southeast-1.amazonaws.com/converter-effy/AITranslate_1_1723115119.pdf";
+    const DEFAULT_PDF = "http://localhost:8000/AITranslate_1_1723115119.pdf";
     
     let fileUrlEl = document.querySelector('#file_url');
     let ucbEl = document.querySelector('#use_clustered_blocks');
+    let ucsEl = document.querySelector('#use_clustered_spans');
     let xToleranceEl = document.querySelector('#x_tolerance');
     let yToleranceEl = document.querySelector('#y_tolerance');
     let outputTypeEl = document.querySelector('#output_type');
@@ -83,19 +89,21 @@
 	}
 	
     ['', true, false].forEach((opt) => ucbEl.options.add(new Option(opt)));
+    ['', true, false].forEach((opt) => ucsEl.options.add(new Option(opt)));
 	['', 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => xToleranceEl.options.add(new Option(opt)));
 	['', 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => yToleranceEl.options.add(new Option(opt)));
     [['', ''], [0, '0 - json'], [1, '1 - pdf'], [2, '2 - html']].forEach((opt) => outputTypeEl.options.add(new Option(opt[1], opt[0])));
-	ucbEl.addEventListener('change', (evt) => {
+	/*ucbEl.addEventListener('change', (evt) => {
 		xToleranceEl.disabled = ucbEl.value == 'false' || ucbEl.value == '';
 		yToleranceEl.disabled = ucbEl.value == 'false' || ucbEl.value == '';
-	});
+	});*/
 
     resetEl.addEventListener('click', (evt) => {
       fileUrlEl.value = DEFAULT_PDF;
-      ucbEl.value = true;
-      xToleranceEl.value = 0;
-      yToleranceEl.value = 3;
+      ucbEl.value = false;
+      ucsEl.value = true;
+      xToleranceEl.value = 1;
+      yToleranceEl.value = 1;
       outputTypeEl.selectedIndex = 1;
       logText("Reset params!\n");
     });
@@ -112,6 +120,12 @@
       let ucb = ucbEl.value?.toLowerCase?.() === 'true';
 	  if (ucb) payload.use_clustered_blocks = ucb;
       if (ucb) {
+		payload.x_tolerance = parseInt(xToleranceEl.value);
+		payload.y_tolerance = parseInt(yToleranceEl.value);
+	  }
+      let ucs = ucsEl.value?.toLowerCase?.() === 'true';
+	  if (ucs) payload.use_clustered_spans = ucs;
+      if (ucs) {
 		payload.x_tolerance = parseInt(xToleranceEl.value);
 		payload.y_tolerance = parseInt(yToleranceEl.value);
 	  }
