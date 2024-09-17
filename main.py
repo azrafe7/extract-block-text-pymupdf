@@ -57,7 +57,7 @@ async def test_page():
 def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     logger.debug(f"Processing '{file_url}'")
     logger.debug(f"Use clustered blocks: {use_clustered_blocks}")
-    logger.debug(f"Use clustered lines: {use_clustered_spans}")
+    logger.debug(f"Use clustered spans: {use_clustered_spans}")
     if use_clustered_blocks or use_clustered_spans:
         logger.debug(f"  x_tolerance: {x_tolerance}")
         logger.debug(f"  y_tolerance: {y_tolerance}")
@@ -94,7 +94,7 @@ async def extract_text_post(request: ProcessRequest):
 async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     if file_url is None:
         raise HTTPException(status_code=400, detail="Missing 'file_url' parameter in the query string.")
-    return process_request(file_url, use_clustered_blocks, x_tolerance, y_tolerance, output_type)
+    return process_request(file_url=file_url, use_clustered_blocks=use_clustered_blocks, use_clustered_spans=use_clustered_spans, x_tolerance=x_tolerance, y_tolerance=y_tolerance, output_type=output_type)
 
 def process_request(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     try:
