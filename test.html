@@ -90,8 +90,8 @@
 	
     ['', true, false].forEach((opt) => ucbEl.options.add(new Option(opt)));
     ['', true, false].forEach((opt) => ucsEl.options.add(new Option(opt)));
-	['', 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => xToleranceEl.options.add(new Option(opt)));
-	['', 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => yToleranceEl.options.add(new Option(opt)));
+	['', -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => xToleranceEl.options.add(new Option(opt)));
+	['', -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => yToleranceEl.options.add(new Option(opt)));
     [['', ''], [0, '0 - json'], [1, '1 - pdf'], [2, '2 - html']].forEach((opt) => outputTypeEl.options.add(new Option(opt[1], opt[0])));
 	/*ucbEl.addEventListener('change', (evt) => {
 		xToleranceEl.disabled = ucbEl.value == 'false' || ucbEl.value == '';
