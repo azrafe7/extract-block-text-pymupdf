@@ -4,7 +4,7 @@
       font-family: monospace;
     }
     
-    input[type="text"], textarea {
+    #file_url, textarea {
       min-width: 700px;
     }
     
@@ -26,6 +26,10 @@
       font-weight: bold;
       vertical-align: top;
     }
+	
+	.tolerance input {
+	  width: 60px;
+    }
     
     form select {
       min-width: 50px;
@@ -46,13 +50,15 @@
       <label for="use_clustered_spans">use_clustered_spans</label>
       <select id="use_clustered_spans"></select>
     </div>
-    <div>
-      <label for="x_tolerance">x_tolerance</label>
-      <select id="x_tolerance"></select>
+    <div class="tolerance">
+      <label for="x_tolerance_select">x_tolerance</label>
+      <select id="x_tolerance_select"></select>
+	  <input id="x_tolerance"></input>
     </div>
-    <div>
-      <label for="y_tolerance">y_tolerance</label>
-      <select id="y_tolerance"></select>
+    <div class="tolerance">
+      <label for="y_tolerance_select">y_tolerance</label>
+      <select id="y_tolerance_select"></select>
+	  <input id="y_tolerance"></input>
     </div>
     <div>
       <label for="output_type">output_type:</label>
@@ -78,6 +84,8 @@
     let ucsEl = document.querySelector('#use_clustered_spans');
     let xToleranceEl = document.querySelector('#x_tolerance');
     let yToleranceEl = document.querySelector('#y_tolerance');
+    let xToleranceSelectEl = document.querySelector('#x_tolerance_select');
+    let yToleranceSelectEl = document.querySelector('#y_tolerance_select');
     let outputTypeEl = document.querySelector('#output_type');
     let resetEl = document.querySelector('#reset');
     let sendEl = document.querySelector('#send');
@@ -90,20 +98,28 @@
 	
     ['', true, false].forEach((opt) => ucbEl.options.add(new Option(opt)));
     ['', true, false].forEach((opt) => ucsEl.options.add(new Option(opt)));
-	['', -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => xToleranceEl.options.add(new Option(opt)));
-	['', -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => yToleranceEl.options.add(new Option(opt)));
+	['', -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => xToleranceSelectEl.options.add(new Option(opt)));
+	['', -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 10, 30].forEach((opt) => yToleranceSelectEl.options.add(new Option(opt)));
     [['', ''], [0, '0 - json'], [1, '1 - pdf'], [2, '2 - html']].forEach((opt) => outputTypeEl.options.add(new Option(opt[1], opt[0])));
 	/*ucbEl.addEventListener('change', (evt) => {
-		xToleranceEl.disabled = ucbEl.value == 'false' || ucbEl.value == '';
-		yToleranceEl.disabled = ucbEl.value == 'false' || ucbEl.value == '';
+		xToleranceSelectEl.disabled = ucbEl.value == 'false' || ucbEl.value == '';
+		yToleranceSelectEl.disabled = ucbEl.value == 'false' || ucbEl.value == '';
 	});*/
+	xToleranceSelectEl.addEventListener('change', (evt) => {
+		xToleranceEl.value = xToleranceSelectEl.value;
+	});
+	yToleranceSelectEl.addEventListener('change', (evt) => {
+		yToleranceEl.value = yToleranceSelectEl.value;
+	});
 
     resetEl.addEventListener('click', (evt) => {
       fileUrlEl.value = DEFAULT_PDF;
       ucbEl.value = false;
       ucsEl.value = true;
-      xToleranceEl.value = 1;
-      yToleranceEl.value = 1;
+      xToleranceSelectEl.value = 1;
+      yToleranceSelectEl.value = 1;
+	  xToleranceEl.value = xToleranceSelectEl.value;
+	  yToleranceEl.value = yToleranceSelectEl.value;
       outputTypeEl.selectedIndex = 1;
       logText("Reset params!\n");
     });
@@ -119,15 +135,12 @@
       };
       let ucb = ucbEl.value?.toLowerCase?.() === 'true';
 	  if (ucb) payload.use_clustered_blocks = ucb;
-      if (ucb) {
-		payload.x_tolerance = parseInt(xToleranceEl.value);
-		payload.y_tolerance = parseInt(yToleranceEl.value);
-	  }
       let ucs = ucsEl.value?.toLowerCase?.() === 'true';
 	  if (ucs) payload.use_clustered_spans = ucs;
-      if (ucs) {
-		payload.x_tolerance = parseInt(xToleranceEl.value);
-		payload.y_tolerance = parseInt(yToleranceEl.value);
+
+      if (ucb || ucs) {
+		payload.x_tolerance = parseFloat(xToleranceEl.value);
+		payload.y_tolerance = parseFloat(yToleranceEl.value);
 	  }
 	  if (outputTypeEl.value != '') payload.output_type = parseInt(outputTypeEl.value);
       

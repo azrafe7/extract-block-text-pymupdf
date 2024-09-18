@@ -41,9 +41,9 @@ class ProcessRequest(BaseModel):
     file_url: HttpUrl
     use_clustered_blocks: Optional[bool] = False
     use_clustered_spans: Optional[bool] = False
-    x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE
-    y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE
-    output_type: Optional[int] = DEFAULT_OUTPUT_TYPE
+    x_tolerance: Optional[float] = DEFAULT_X_TOLERANCE
+    y_tolerance: Optional[float] = DEFAULT_Y_TOLERANCE
+    output_type: Optional[float] = DEFAULT_OUTPUT_TYPE
 
 
 @app.get("/")
@@ -54,7 +54,7 @@ async def root():
 async def test_page():
     return FileResponse('test.html')
 
-def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
+def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[float] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[float] = DEFAULT_Y_TOLERANCE, output_type: Optional[float] = DEFAULT_OUTPUT_TYPE):
     logger.debug(f"Processing '{file_url}'")
     logger.debug(f"Use clustered blocks: {use_clustered_blocks}")
     logger.debug(f"Use clustered spans: {use_clustered_spans}")
@@ -99,7 +99,7 @@ async def extract_text_post(request: ProcessRequest):
     return res
 
 @app.get("/extract_text")
-async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
+async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[float] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[float] = DEFAULT_Y_TOLERANCE, output_type: Optional[float] = DEFAULT_OUTPUT_TYPE):
     if file_url is None:
         raise HTTPException(status_code=400, detail="Missing 'file_url' parameter in the query string.")
     res = process_request(
@@ -112,7 +112,7 @@ async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] =
 
     return res
 
-def process_request(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
+def process_request(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[float] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[float] = DEFAULT_Y_TOLERANCE, output_type: Optional[float] = DEFAULT_OUTPUT_TYPE):
     try:
         output_pdf, output_data, input_filename = process_pdf(file_url, use_clustered_blocks=use_clustered_blocks, use_clustered_spans=use_clustered_spans, x_tolerance=x_tolerance, y_tolerance=y_tolerance, output_type=output_type)
 
