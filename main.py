@@ -62,7 +62,7 @@ def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_US
         logger.debug(f"  x_tolerance: {x_tolerance}")
         logger.debug(f"  y_tolerance: {y_tolerance}")
     logger.debug(f"Output type: '{OUTPUT_MEDIA_TYPES[output_type]}'")
-    
+
     # Check if the input file has a .pdf extension
     file_url = str(file_url) # force-convert to str
     if not file_url.lower().endswith('.pdf'):
@@ -75,7 +75,7 @@ def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_US
 
     # Create a Pdf Document object from the fetched content
     pdf_document = fitz.Document(stream=BytesIO(pdf_content))
-    
+
     json_data, result_pdf_document = highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=use_clustered_blocks, use_clustered_spans=use_clustered_spans, x_tolerance=x_tolerance, y_tolerance=y_tolerance)
 
     # Generate the output filename
@@ -88,13 +88,29 @@ def process_pdf(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_US
 async def extract_text_post(request: ProcessRequest):
     if not request:
         raise HTTPException(status_code=400, detail="Missing JSON payload. Please provide 'file_url' in the request body.")
-    return process_request(request.file_url, request.use_clustered_blocks, request.use_clustered_spans, request.x_tolerance, request.y_tolerance, request.output_type)
+    res = process_request(
+        file_url=request.file_url,
+        use_clustered_blocks=request.use_clustered_blocks,
+        use_clustered_spans=request.use_clustered_spans,
+        x_tolerance=request.x_tolerance,
+        y_tolerance=request.y_tolerance,
+        output_type=request.output_type)
+
+    return res
 
 @app.get("/extract_text")
 async def extract_text_get(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     if file_url is None:
         raise HTTPException(status_code=400, detail="Missing 'file_url' parameter in the query string.")
-    return process_request(file_url=file_url, use_clustered_blocks=use_clustered_blocks, use_clustered_spans=use_clustered_spans, x_tolerance=x_tolerance, y_tolerance=y_tolerance, output_type=output_type)
+    res = process_request(
+        file_url=file_url,
+        use_clustered_blocks=use_clustered_blocks,
+        use_clustered_spans=use_clustered_spans,
+        x_tolerance=x_tolerance,
+        y_tolerance=y_tolerance,
+        output_type=output_type)
+
+    return res
 
 def process_request(file_url: str, use_clustered_blocks: Optional[bool] = DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans: Optional[bool] = DEFAULT_USE_CLUSTERED_SPANS, x_tolerance: Optional[int] = DEFAULT_X_TOLERANCE, y_tolerance: Optional[int] = DEFAULT_Y_TOLERANCE, output_type: Optional[int] = DEFAULT_OUTPUT_TYPE):
     try:
@@ -102,7 +118,7 @@ def process_request(file_url: str, use_clustered_blocks: Optional[bool] = DEFAUL
 
         if output_type == 0:
             output_data = json.dumps(
-                output_data, 
+                output_data,
                 # indent=2
             )
         elif output_type == 2:  # text only
@@ -114,7 +130,7 @@ def process_request(file_url: str, use_clustered_blocks: Optional[bool] = DEFAUL
                 for block in page["blocks"]:
                     text_blocks.append(block["text"])
                 page_blocks.append(page_block)
-            
+
             output_data = '''
 <html>
   <head>
@@ -124,18 +140,18 @@ def process_request(file_url: str, use_clustered_blocks: Optional[bool] = DEFAUL
       font-family: monospace;
     }
     .page {
-      margin-top: 1em; 
+      margin-top: 1em;
       font-size: 1.2em;
       font-weight: bold;
     }
     .text-caption {
-      margin-left: 1em; 
+      margin-left: 1em;
       margin-top: .75em;
       font-weight: bold;
     }
     .text {
       margin-left: 1em;
-      margin-top:.2em; 
+      margin-top:.2em;
       border:1px solid #1d1;
     }
     </style>
@@ -147,7 +163,7 @@ def process_request(file_url: str, use_clustered_blocks: Optional[bool] = DEFAUL
                     output_data += f'<div class="text">{text}</div>'
             output_data += f'</html>'
 
-        
+
         # Return the PDF as a downloadable file along with the response message
         media_type = OUTPUT_MEDIA_TYPES[output_type]
         # output_filename = os.path.splitext(input_filename)[0] + f"{HIGHLIGHTED_SUFFIX}.pdf"

@@ -78,10 +78,10 @@ def cluster_blocks(
             return True
 
     # add bbox converted to rect
-    for b in blocks: 
+    for b in blocks:
         bbox = b['bbox']
         b['rect'] = fitz.Rect(x0=bbox[0], y0=bbox[1], x1=bbox[2], y1=bbox[3])
-    
+
     # exclude graphics not contained in the clip
     paths = [
         p
@@ -156,15 +156,15 @@ def flags_decomposer(flags):
 def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CLUSTERED_BLOCKS, use_clustered_spans=DEFAULT_USE_CLUSTERED_SPANS, x_tolerance=DEFAULT_X_TOLERANCE, y_tolerance=DEFAULT_Y_TOLERANCE):
 
     pdf_data = []
-    
+
     # Iterate through each page in the PDF
     for page_number in range(min(8, pdf_document.page_count)):
         page = pdf_document[page_number]
-        
+
         text_models = []
         image_models = []
         block_models = []
-        page_data = { 
+        page_data = {
             "page_number": page_number + 1,
             "page_width": page.rect[2] - page.rect[0],
             "page_height": page.rect[3] - page.rect[1],
@@ -208,14 +208,14 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                 "image_height": image_info['height'],
             }
             image_models.append(image_model)
-            
+
             # Save image
             #if image_info['xref']:
             #    image_data = pdf_document.extract_image(image_info['xref'])
             #    imgout = open(f"image{page_number}-{image_index}.{image_data['ext']}", "wb")
             #    imgout.write(image_data["image"])
             #    imgout.close()
-        
+
             # for k in range(len(bbox)): bbox[k] += 2 if k < 2 else -2  # shrink bbox
             #highlight = page.add_rect_annot(bbox)
             #highlight.set_colors(stroke=[0, .2, 1])  # Blue rectangle
@@ -223,7 +223,7 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
 
         # Extract text with formatting information
         all_text_blocks = [block for block in page.get_text("dict", flags=DEFAULT_FLAGS, sort=DEFAULT_SORT)["blocks"] if block['type'] == 0]
-                
+
         if use_clustered_blocks or use_clustered_spans:
             if use_clustered_blocks:
                 page_data["use_clustered_blocks"] = {
@@ -243,6 +243,7 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                 clustered_rects = cluster_blocks(page, blocks=all_spans, x_tolerance=x_tolerance, y_tolerance=y_tolerance)
 
             blocks = []
+            print(f"Page: {page_data['page_number']}")
             print(f"all_text_blocks: {len(all_text_blocks)}  clustered_rects: {len(clustered_rects)}")
             for rect in clustered_rects:
                 merged_blocks = [clipped_block for clipped_block in page.get_text("dict", clip=rect, flags=DEFAULT_FLAGS, sort=DEFAULT_SORT)["blocks"] if clipped_block['type'] == 0]
@@ -259,27 +260,27 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
             page_data["use_clustered_blocks"] = False
             page_data["use_clustered_spans"] = False
             blocks = all_text_blocks
-        
-        print(f"blocks: {len(blocks)}")
+
+        print(f"processing blocks: {len(blocks)}")
         # breakpoint()
-        
+
         # output.json
         #json_output = json.loads(page.get_text("json", sort=True))
         #with open('output.json', 'w') as f:
         #    json.dump(json_output, f, indent=2)
-        
+
         for block_index, block in enumerate(blocks):
             if block['type'] == 0:  # Text block
                 lines = block['lines']
                 block_texts = []
-                
+
                 # Draw rectangles around each line
                 for line_index, line in enumerate(lines):
                     spans = [span for span in line['spans'] if span['text']]
                     text = ''.join([span['text'] for span in spans])
                     # print(f"[page {page_number}] spans text in block {block_index} line {line_index}: '{text}'")
                     bbox = line['bbox']
-                    
+
                     # highlight = page.add_rect_annot(bbox)
                     # highlight.set_colors(stroke=[1, 0, 0])  # Red rectangle
                     # highlight.update()
@@ -287,7 +288,7 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                     # text_annot = page.add_text_annot((bbox[2]-2, bbox[3]-2), text, icon="Comment")
                     # text_annot.set_colors(stroke=[1, 0, 0])  # Red
                     # text_annot.update(opacity=.7)
-                    
+
                     for span in spans:
                         # breakpoint()
                         text_model = {
@@ -304,9 +305,9 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                             "end_top": bbox[3],
                         }
                         text_models.append(text_model)
-                    
+
                     block_texts.append(text)
-                
+
                 block_text = "\n".join(block_texts)
 
                 block_model = {
@@ -315,7 +316,7 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                     "boundingBox": ",".join([str(value) for value in block['bbox']])
                 }
                 block_models.append(block_model)
-                
+
                 # Draw rectangles around each block
                 # breakpoint()
                 bbox = list(block['bbox'])
@@ -327,10 +328,10 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                 text_annot = page.add_text_annot((bbox[0]-18, bbox[1]-18), block_text, icon="Paragraph")
                 text_annot.set_colors(stroke=[0, 1, 0])  # Green
                 text_annot.update(opacity=.7)
-        
+
         pdf_data.append(page_data)
-        
-        
+
+
     return pdf_data, pdf_document
 
 def main():
@@ -357,7 +358,7 @@ def main():
     print()
     print(f"use_clustered_blocks: {json_data[-1]['use_clustered_blocks']}")
     print(f"Highlighted PDF saved as: {output_pdf}")
-    
+
     with open(output_json, 'w', encoding='utf-8') as f:
         json.dump(json_data, f, indent=2)
         print(f"JSON data saved as: {output_json}")
