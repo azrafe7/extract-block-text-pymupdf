@@ -5,6 +5,10 @@ import os
 import re
 import json
 import PIL
+import logging
+
+logger = logging.getLogger('uvicorn.error')
+logger.setLevel(logging.DEBUG)
 
 
 HIGHLIGHTED_SUFFIX = '_highlighted'
@@ -243,8 +247,8 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
                 clustered_rects = cluster_blocks(page, blocks=all_spans, x_tolerance=x_tolerance, y_tolerance=y_tolerance)
 
             blocks = []
-            print(f"Page: {page_data['page_number']}")
-            print(f"all_text_blocks: {len(all_text_blocks)}  clustered_rects: {len(clustered_rects)}")
+            logger.debug(f"  Page: {page_data['page_number']}")
+            logger.debug(f"    all_text_blocks: {len(all_text_blocks)}  clustered_rects: {len(clustered_rects)}")
             for rect in clustered_rects:
                 merged_blocks = [clipped_block for clipped_block in page.get_text("dict", clip=rect, flags=DEFAULT_FLAGS, sort=DEFAULT_SORT)["blocks"] if clipped_block['type'] == 0]
                 # breakpoint()
@@ -261,7 +265,7 @@ def highlight_sentences_in_pdf(pdf_document, use_clustered_blocks=DEFAULT_USE_CL
             page_data["use_clustered_spans"] = False
             blocks = all_text_blocks
 
-        print(f"processing blocks: {len(blocks)}")
+        logger.debug(f"    processing blocks: {len(blocks)}")
         # breakpoint()
 
         # output.json
